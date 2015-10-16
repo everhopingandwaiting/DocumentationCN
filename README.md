@@ -1,8 +1,3 @@
----
-post_title: '树莓派（Raspberry Pi）帮助文档'
-layout: post
-published: true
----
 # 树莓派（Raspberry Pi）帮助文档
 
 本文档为树莓派官方帮助文档，由[树莓派基金会（Raspberry Pi Foundation）](https://www.raspberrypi.org/)以及基社区贡献者撰写。本帮助文档中方版本由[聪头话斋](https://alexlee.cn)发起和维护。
