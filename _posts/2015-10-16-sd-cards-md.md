@@ -1,6 +1,6 @@
 ---
 ID: 41
-post_title: sd-cards.md
+post_title: SD卡（TF卡）
 author: adm
 post_date: 2015-10-16 12:25:16
 post_excerpt: ""
