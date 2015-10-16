@@ -17,7 +17,7 @@ published: true
 
 - SD卡类型。SD卡协会定义了SD卡的几种速度规格，可令用户直观地区分不同类型SD卡的数据读写速率。比如Class 4（C4）的写入速率应达到4MB/s，而C10应达10MB/s。但这并非表示日常使用中C10与C4的卡相比更胜一筹，因为写入速度的提升往往需要牺牲读取速度及增加寻道时间。
 
-官方建议购买8G、C6的[Raspberry Pi TF card](http://swag.raspberrypi.org/products/noobs-8gb-sd-card)，据称这张卡“秒杀”市面上其余的SD卡，更附送一张SD卡套，十分超值。
+官方建议购买8G、C6的[Raspberry Pi TF card](http://swag.raspberrypi.org/products/noobs-8gb-sd-card)，此卡“秒杀”市面上其余的SD卡，更附送一张SD卡套，十分超值。
 
 译者注：SD卡（TF卡）的兼容情况，可参考[elinux.org](http://elinux.org)的这个Wiki：[RPi SD cards](http://elinux.org/RPi_SD_cards)。
 
