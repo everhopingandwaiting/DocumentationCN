@@ -1,15 +1,11 @@
 ---
 ID: 41
 post_title: SD卡（TF卡）
-author:
-  - adm
-post_date:
-  - 2015-10-16 12:25:16
-post_excerpt:
-  - ""
+author: adm
+post_date: 2015-10-16 12:25:16
+post_excerpt: ""
 layout: post
-permalink:
-  - "https://www.rpicn.org/documentation/installation/sd-cards-md/"
+permalink: https://www.rpicn.org/documentation/installation/sd-cards-md/
 published: true
 ---
 # SD卡（TF卡）
