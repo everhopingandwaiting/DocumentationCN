@@ -42,4 +42,4 @@ published: true
 
 ## 故障处理
 
-在设置过程中遇到任何问题，请参考[故障处理](../troubleshooting/README.md)。
+在设置过程中遇到任何问题，请参考[故障处理](../troubleshooting/README.md.10)。
