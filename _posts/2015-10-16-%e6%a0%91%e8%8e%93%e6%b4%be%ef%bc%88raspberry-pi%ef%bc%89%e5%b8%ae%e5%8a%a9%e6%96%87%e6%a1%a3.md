@@ -45,15 +45,15 @@ published: true
 
  [1]: https://www.raspberrypi.org/
  [2]: https://alexlee.cn
- [3]: setup/README.md
- [4]: installation/README.md
- [5]: usage/README.md
- [6]: configuration/README.md
- [7]: remote-access/README.md.2
- [8]: linux/README.md
- [9]: raspbian/README.md
- [10]: hardware/README.md
- [11]: troubleshooting/README.md
+ [3]: setup/README.md.2
+ [4]: installation/README.md.3
+ [5]: usage/README.md.4
+ [6]: configuration/README.md.5
+ [7]: remote-access/README.md.6
+ [8]: linux/README.md.7
+ [9]: raspbian/README.md.8
+ [10]: hardware/README.md.9
+ [11]: troubleshooting/README.md.10
  [12]: http://github.com/raspberrypi/documentation/issues
  [13]: CONTRIBUTING.md
  [14]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
