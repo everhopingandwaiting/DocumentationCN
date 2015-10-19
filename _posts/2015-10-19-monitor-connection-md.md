@@ -1,6 +1,6 @@
 ---
 ID: 77
-post_title: 显示器设置
+post_title: 显示设备和接口
 author: adm
 post_date: 2015-10-19 00:27:03
 post_excerpt: ""
