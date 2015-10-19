@@ -49,7 +49,7 @@ published: true
  [4]: installation/README.md
  [5]: usage/README.md
  [6]: configuration/README.md
- [7]: remote-access/README.md
+ [7]: remote-access/README.md.2
  [8]: linux/README.md
  [9]: raspbian/README.md
  [10]: hardware/README.md
