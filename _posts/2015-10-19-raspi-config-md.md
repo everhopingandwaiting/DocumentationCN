@@ -122,13 +122,13 @@ sudo raspi-config
 
 #### SSH
 
-Enable/disable remote command line access to your Pi using SSH.
+启用或禁用SSH客户端从远端登录树莓派。
 
-SSH allows you to remotely access the command line of the Raspberry Pi from another computer. Disabling this ensures the SSH service does not start on boot, freeing up processing resources. Read more about using [SSH](../remote-access/ssh/README.md). Note that SSH is enabled by default. If connecting your Pi directly to a public network, you should disable SSH unless you have set up secure passwords for all users.
+SSH协议允许用户在另一台电脑上远程登录到树莓派的命令行界面。禁用SSH可确保SSH服务不随着树莓派开机而启动，从而节省更多资源。更多细节请参考[SSH](../remote-access/ssh/README.md)。注意：SSH默认是已启用的，如果树莓派连接到公共网络，SSH应该被禁用，除非树莓派各个用户都有密码保护。
 
 #### Device Tree
 
-Enable/Disable the use of Device Tree. Read more about [Device Trees Config](device-tree.md).
+启用或禁用设备树。更多细节请参考[设备树](device-tree.md)。
 
 #### SPI
 
