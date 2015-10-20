@@ -29,9 +29,9 @@ sudo raspi-config
 工具提供的选项包括：
 
 `                        Raspberry Pi Software Configuration Tool (raspi-config)`
-``
+` `
 `Setup Options`
-``
+` `
 `    1 Expand Filesystem              Ensures that all of the SD card storage is available to the OS`
 `    2 Change User Password           Change password for the default user (pi)`
 `    3 Enable Boot to Desktop/Scratch Choose whether to boot into a desktop environment, Scratch, or the command line`
@@ -40,8 +40,8 @@ sudo raspi-config
 `    6 Add to Rastrack                Add this Pi to the online Raspberry Pi Map (Rastrack)`
 `    7 Overclock                      Configure overclocking for your Pi`
 `    8 Advanced Options               Configure advanced settings`
-`    9 About `raspi-config`           Information about this configuration tool`
-``
+`    9 About raspi-config           Information about this configuration tool`
+` `
 `                                   <Select>                                  <Finish>`
 
 ### 在菜单中移动光标
