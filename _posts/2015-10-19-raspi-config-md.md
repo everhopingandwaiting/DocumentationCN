@@ -132,41 +132,40 @@ SSH协议允许用户在另一台电脑上远程登录到树莓派的命令行�
 
 #### SPI
 
-Enable/Disable SPI interfaces and automatic loading of SPI kernel module, needed for products such as PiFace.
+启用或禁用SPI接口及自动加载SPI内核模块，需要其他外设产品，如PiFace。
 
 #### I2C
 
-Enable/Disable I2C interfaces and automatic loading of I2C kernel module.
+启用或禁用I2C接口及自动加载I2C内核模块。
 
-#### 串口Serial
+#### 串口（Serial）
 
-Enable/Disable shell and kernel messages on the serial connection.
+启用或禁用串口通讯。
 
 #### 音频（Audio）
 
-Force audio out through HDMI or a 3.5mm jack. Read more about [audio configuration](audio-config.md).
+设置通过HDMI或3.5mm插孔播放音频。更多细节请参考[音频设置](audio-config.md).
 
 #### 更新（Update）
 
-Update this tool to the latest version.
+将本程序更新到最新版本。
 
 ### 关于raspi-config（About raspi-config）
 
-Selecting this option shows the following text:
+选择该选项后，程序将会显示：
 
 ```
-This tool provides a straight-forward way of doing initial configuration of the Raspberry Pi. Although it can be run at any time, some of the options may have difficulties if you have heavily customised your installation.
+本程序为树莓派的基本设置提供直观便捷的方法。尽管本程序可随时运行，但如果系统经过深度自定义后，某些选项可能难以再次更改。
 ```
 
 ### 完成（Finish）
 
-Use this button when you have completed your changes. You will be asked whether you want to reboot or not. When used for the first time it's best to reboot. There will be a delay in rebooting if you have chosen to resize your SD card.
+所有的设置更改后可以按下此按钮。程序会提示询问是否重启，第一次运行最好重启，以便令新设置生效。如果选择过“扩展文件系统”，重启可能会需要更长的时间。
 
-## 开发本工具（Development of this tool）
+## 开发本程序（Development of this tool）
 
-See this tool's source at [github.com/asb/raspi-config](https://github.com/asb/raspi-config), where you can open issues and create pull requests.
+本程序的源代码托管在[github.com/asb/raspi-config](https://github.com/asb/raspi-config)，如遇到任何问题请在GitHub上提交，也欢迎改进后提出Pull请求。
 
 ---
 
-*This article uses content from the eLinux wiki page [RPi raspi-config](http://elinux.org/RPi_raspi-config), which is shared under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
-
+*注：本文参考了eLinux的文章[RPi raspi-config](http://elinux.org/Rpi_raspi-config)，其许可证为：[Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)。*
