@@ -48,7 +48,7 @@ sudo raspi-config
 
 在各个选项中，可以使用上下箭头键高亮显示各种选项。按下右箭头会跳到“选择”和“完成”按钮，按下左箭头则返回选项列表。此外，还可以使用“Tab”键切换这两个区域。
 
-另外值得一提的是，假如选项列表非常长，比如“时区”列表，用户可以按字母键快速跳到相应的部分。例如，按下“L”键，列表将显示以“L”开头的第一个选项“Lisbon”，距离“London”只剩下两行，大大节省用户滚动列表的时间。
+另外值得一提的是，假如选项列表非常长，比如“时区”列表，用户可以按字母键快速跳到相应的部分。例如，按下“S”键，列表将显示以“S”开头的第一个选项“Sakhalin”，距离“Shanghai”只有几行，大大节省用户滚动列表的时间。
 
 ### `raspi-config`的任务是什么
 
@@ -56,124 +56,101 @@ sudo raspi-config
 
 ## 菜单选项
 
-### Expand filesystem（扩展文件系统）
+###扩展文件系统（Expand filesystem）
 
 如果Raspbian是使用NOOBS安装的，这个选项可以跳过，因NOOBS会自动扩展文件系统。但是如果用户自行使用系统镜像安装系统，则需要应用该选项，因为SD卡的系统分区会剩下3G左右未使用的空间。应用该选项后重启后生效，SD卡剩余的空间将可以全部使用。注意，该选项应用时并不需要确认，将会即时执行文件系统的扩展。
 
-### Change user password（更改用户密码）
+###更改用户密码（Change user password）
 
 树莓派默认用户是`pi`，其密码是`raspberry`。在这里可以更改用户密码。参考[用户](../linux/usage/users.md)可了解更多关于用户的设置。
 
-### Enable boot to desktop or Scratch（开机自动进入桌面或Scratch）
+### 开机自动进入图形界面（Enable boot to desktop or Scratch）
 
 树莓派开机后进入命令行界面、图形界面抑或直接到Scratch，可以在这里更改。
 
-### Internationalisation options（区域和语言）
+###区域和语言（Internationalisation options）
 
+选中`Internationalisation options`后按回车，将进入下级菜单，可供选择的选项有：
 
+#### 更改文字编码（Change locale）
 
+选择一个地点，更改文字编码，简体中文为`zh_CN.UTF-8 UTF-8`。（译者注，选择了中文后，在桌面图形界面下使用终端，有时可能会出现错误）。
 
+#### 更改时区（Change timezone）
 
-### Internationalisation options
+选择合适的时区，先从大洲开始，如`Asia`，然后选择城市，例如`Shanghai`，按下空白键选中，最后按回车确认。
 
-Select `Internationalisation Options` and hit `Enter` to be taken to a sub-menu containing the following options:
+#### 更改键盘布局（Change keyboard layout）
 
-<a name="change-locale"></a>
-#### Change locale
+更改键盘布局可能需要稍长的时间，因为加载布局列表较为费时。更改是即时生效的，但是可能需要重启。（译者注：使用中文的用户，如果键盘不是特制的话，可能可以跳过这个选项。）
 
-Select a locale, for example `en_GB.UTF-8 UTF-8`.
+### 启用摄像头模块（Enable camera）
 
-<a name="change-timezone"></a>
-#### Change timezone
+该选项可开启摄像头模块的使用。选择`Enable`后，系统会自动为GPU分配最少128M的专用内存。
 
-Select your local timezone, starting with the region such as `Europe`; then select a city, for example `London`. Type a letter to skip down the list to that point in the alphabet.
+### 加入[Rastrack](http://rastrack.co.uk/)（Add to [Rastrack](http://rastrack.co.uk/)）
 
-<a name="change-keyboard-layout"></a>
-#### Change keyboard layout
+[Rastrack](http://rastrack.co.uk/)是基于Google Map的用户分布地图，由树莓派用户提供自己地理位置，不同颜色指示着不同的用户热度。[Rastrack](http://rastrack.co.uk/)由树莓派爱好者[Ryan Walmsley](http://ryanteck.uk/)于2012年建立。
 
-This option opens another menu which allows you to select your keyboard layout. It will take a long time to display while it reads all the keyboard types. Changes usually take effect immediately, but may require a reboot.
+使用这个选项便可与其他树莓派爱好者分享你的地理位置。
 
-<a name="enable-camera"></a>
-### Enable camera
+### 超频（Overclock）
 
-In order to use the Raspberry Pi camera module, you must enable it here. Select the option and proceed to `Enable`. This will make sure at least 128MB of RAM is dedicated to the GPU.
-
-<a name="add-to-rastrack"></a>
-### Add to Rastrack
-
-Rastrack is a user-contributed Google Map to which Pi users in the community have added their location; it shows a heat map of where Pi users are known to be around the world. This was set up by young Pi enthusiast [Ryan Walmsley](http://ryanteck.uk/) in 2012. Rastrack is located at [rastrack.co.uk](http://rastrack.co.uk/).
-
-You can use this option to add your location to the map.
-
-<a name="overclock"></a>
-### Overclock
-
-It is possible to overclock your Raspberry Pi's CPU. The default is 700MHz but it can be set up to 1000MHz. The overclocking you can achieve will vary; overclocking too high may result in instability. Selecting this option shows the following warning:
+树莓派的CPU可以超频工作，默认的主频是700MHz，可以超频到1000MHz。主频具体可以超频到什么频率可能会有不同，但超频太高可能会引致系统不稳定。选择超频时程序会提示：
 
 ```
-Be aware that overclocking may reduce the lifetime of your Raspberry Pi. If overclocking at a certain level causes system instability, try a more modest overclock. Hold down `shift` during boot to temporarily disable overclock.
+请知悉超频可能使树莓派缩短使用寿命。如果超频导致系统不稳定，请尝试降低主频。在系统启动时按下`Shift`键可暂时禁用超频。
 ```
 
-### Advanced options
+### 高级选项（Advanced options）
 
-<a name="overscan"></a>
-#### Overscan
+#### 过扫描（Overscan）
 
-Old TV sets had a significant variation in the size of the picture they produced; some had cabinets that overlapped the screen. TV pictures were therefore given a black border so that none of the picture was lost; this is called overscan. Modern TVs and monitors don't need the border, and the signal doesn't allow for it. If the initial text shown on the screen disappears off the edge, you need to enable overscan to bring the border back.
+旧式电视机有着多种不同的画面尺寸，有些外壳甚至会遮挡着屏幕的一部分，因此电视机的画面尺寸只得作相应的调整，这就是“过扫描”。现在市面上的电视机或显示器一般不再需要作这样的调整，如果开机画面显示不全，请尝试启用过扫描作显示画幅的调整。
 
-Any changes will take effect after a reboot. You can have greater control over the settings by editing [config.txt](config-txt.md).
+设置的改动将会在重启后生效。更详细的设置，可以直接编辑[config.txt](config-txt.md)。
 
-On some displays, particularly monitors, disabling overscan will make the picture fill the whole screen and correct the resolution. For other displays, it may be necessary to leave overscan enabled and adjust its values.
+一般的显示器，禁用了过扫描后，可使显示画面充满整个屏幕并自动校正。但是有部分显示器需要启用过扫描后再作微调。
 
-<a name="hostname"></a>
-#### Hostname
+#### 主机名（Hostname）
 
-Set the visible name for this Pi on a network.
+设置树莓派的在网络上的主机名。
 
-<a name="memory-split"></a>
-#### Memory split
+#### 内存分割（Memory split）
 
-Change the amount of memory made available to the GPU.
+更改分配给GPU的内存。
 
-<a name="ssh"></a>
 #### SSH
 
 Enable/disable remote command line access to your Pi using SSH.
 
 SSH allows you to remotely access the command line of the Raspberry Pi from another computer. Disabling this ensures the SSH service does not start on boot, freeing up processing resources. Read more about using [SSH](../remote-access/ssh/README.md). Note that SSH is enabled by default. If connecting your Pi directly to a public network, you should disable SSH unless you have set up secure passwords for all users.
 
-<a name="device-tree"></a>
 #### Device Tree
 
 Enable/Disable the use of Device Tree. Read more about [Device Trees Config](device-tree.md).
 
-<a name="spi"></a>
 #### SPI
 
 Enable/Disable SPI interfaces and automatic loading of SPI kernel module, needed for products such as PiFace.
 
-<a name="i2c"></a>
 #### I2C
 
 Enable/Disable I2C interfaces and automatic loading of I2C kernel module.
 
-<a name="serial"></a>
-#### Serial
+#### 串口Serial
 
 Enable/Disable shell and kernel messages on the serial connection.
 
-<a name="audio"></a>
-#### Audio
+#### 音频（Audio）
 
 Force audio out through HDMI or a 3.5mm jack. Read more about [audio configuration](audio-config.md).
 
-<a name="update"></a>
-#### Update
+#### 更新（Update）
 
 Update this tool to the latest version.
 
-<a name="about"></a>
-### About raspi-config
+### 关于raspi-config（About raspi-config）
 
 Selecting this option shows the following text:
 
@@ -181,12 +158,11 @@ Selecting this option shows the following text:
 This tool provides a straight-forward way of doing initial configuration of the Raspberry Pi. Although it can be run at any time, some of the options may have difficulties if you have heavily customised your installation.
 ```
 
-<a name="finish"></a>
-### Finish
+### 完成（Finish）
 
 Use this button when you have completed your changes. You will be asked whether you want to reboot or not. When used for the first time it's best to reboot. There will be a delay in rebooting if you have chosen to resize your SD card.
 
-## Development of this tool
+## 开发本工具（Development of this tool）
 
 See this tool's source at [github.com/asb/raspi-config](https://github.com/asb/raspi-config), where you can open issues and create pull requests.
 
