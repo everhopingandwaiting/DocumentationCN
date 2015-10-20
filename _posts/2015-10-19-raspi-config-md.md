@@ -126,7 +126,7 @@ sudo raspi-config
 
 SSH协议允许用户在另一台电脑上远程登录到树莓派的命令行界面。禁用SSH可确保SSH服务不随着树莓派开机而启动，从而节省更多资源。更多细节请参考[SSH](../remote-access/ssh/README.md)。注意：SSH默认是已启用的，如果树莓派连接到公共网络，SSH应该被禁用，除非树莓派各个用户都有密码保护。
 
-#### Device Tree
+#### 设备树
 
 启用或禁用设备树。更多细节请参考[设备树](device-tree.md)。
 
