@@ -24,7 +24,7 @@ published: true
     - 标准的USB键盘和鼠标都适用于树莓派。
     - 已成功配对的无线键盘和鼠标也可使用。
     - 键盘布局设置，请参考[raspi-config](../configuration/raspi-config.md)。
-- [电源](../hardware/raspberrypi/power/README.md)
+- [电源](../hardware/raspberrypi/power/README.md.12)
     - 树莓派使用Micro USB接口连接电源（与大多数的移动电话一样）。
     - 电源的最低要求：5V-0.7A。（目前树莓派2代B型的建议是5V-2A）。
     - 低功率电源（小于0.7A）也可能提供树莓派的基本需求，但万一供电需求不足时将可能导致树莓派重启。
