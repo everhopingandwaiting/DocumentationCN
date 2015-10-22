@@ -48,7 +48,7 @@ published: true
 
  [1]: https://www.raspberrypi.org/
  [2]: https://alexlee.cn
- [3]: setup/README.md.2
+ [3]: setup/README.md.11
  [4]: installation/README.md.3
  [5]: usage/README.md.4
  [6]: configuration/README.md.5
