@@ -18,7 +18,7 @@ published: true
 
 - [SD卡（TF卡）](../installation/sd-cards.md)
     - 建议使用8G的C4或以上的SD卡（TF卡），最好事先准备好[NOOBS](../installation/noobs.md)；
-- [显示设备和线缆](monitor-connection.md)
+- [显示设备和接口](monitor-connection.md)
     - 一般情况下，支持HDMI或DVI的电视或显示器都可与树莓派一起使用。为保证最佳效果，请使用有HDMI输入的显示设备；另外支持旧式显示设备的接口同样可用。
 - 键盘和鼠标
     - 标准的USB键盘和鼠标都适用于树莓派。
