@@ -33,7 +33,7 @@ published: true
 
 - 以太网线 [仅限Model B/B+/2B]
     - 使用网线可令树莓派连接互联网。
-- [USB无线网卡](../configuration/wireless/README.md)
+- [USB无线网卡](../configuration/wireless/README.md.13)
     - 除了使用网线之外，也可使用无线网卡连接互联网，但需要另作配置。	
 - 音频线
     - 音频可以通过3.5mm插孔使用音箱或耳机播放。
