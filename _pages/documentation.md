@@ -51,7 +51,7 @@ published: true
  [3]: setup/README.md.11
  [4]: installation/README.md.3
  [5]: usage/README.md.4
- [6]: configuration/README.md.5
+ [6]: configuration/README.md.15
  [7]: remote-access/README.md.6
  [8]: linux/README.md.7
  [9]: raspbian/README.md.8
