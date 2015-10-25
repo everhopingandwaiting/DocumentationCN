@@ -1,6 +1,6 @@
 ---
 ID: 295
-post_title: localisation.md
+post_title: 本地化
 author: adm
 post_date: 2015-10-25 23:08:32
 post_excerpt: ""
