@@ -23,7 +23,7 @@ published: true
 
 ### Raspbian
 
-如果已经使用NOOBS完成了Raspbian的安装，Raspbian会按照NOOBS的设定选择相应的语言。但如果用户希望选择另一种显示语言，或系统是使用系统镜像安装的Raspbian，可以使用[raspi-config](raspi-config.md#更改文字编码（Change locale）)。
+如果已经使用NOOBS完成了Raspbian的安装，Raspbian会按照NOOBS的设定选择相应的语言。但如果用户希望选择另一种显示语言，或系统是使用系统镜像安装的Raspbian，可以使用[raspi-config](../raspi-config.md)。
 
 
 ## 更改键盘布局
@@ -36,7 +36,7 @@ published: true
 
 ### Raspbian
 
-如果已经使用NOOBS完成了Raspbian的安装，Raspbian会按照NOOBS的设定选择相应的键盘布局。但如果用户希望选择另一种键盘布局，或系统是使用系统镜像安装的Raspbian，可以使用[raspi-config][raspi-config](raspi-config.md#更改键盘布局（Change keyboard layout）)。
+如果已经使用NOOBS完成了Raspbian的安装，Raspbian会按照NOOBS的设定选择相应的键盘布局。但如果用户希望选择另一种键盘布局，或系统是使用系统镜像安装的Raspbian，可以使用[raspi-config](../raspi-config.md)。
 
 
 ## 更改时区
@@ -47,4 +47,4 @@ published: true
 
 ### Raspbian
 
-还是需要 [raspi-config](raspi-config.md#更改时区（Change timezone）)出马。
+还是需要 [raspi-config](raspi-config.md)出马。
