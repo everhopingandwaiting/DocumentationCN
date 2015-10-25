@@ -47,4 +47,4 @@ published: true
 
 ### Raspbian
 
-还是需要 [raspi-config](raspi-config.md)出马。
+还是需要 [raspi-config](../raspi-config.md)出马。
