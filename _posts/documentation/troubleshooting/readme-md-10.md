@@ -5,8 +5,7 @@ author: adm
 post_date: 2015-10-19 23:21:11
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/troubleshooting/readme-md-10/
+permalink: https://www.rpicn.org/documentation/troubleshooting/readme-md-10/
 published: true
 ---
 # 故障处理
