@@ -1,7 +1,7 @@
 ---
 ID: 132
 post_title: raspi-config
-author: adm
+author: 有聰哥冇甩拖
 post_date: 2015-10-19 23:54:55
 post_excerpt: ""
 layout: post
