@@ -1,6 +1,6 @@
 ---
 ID: 279
-post_title: 摄像头
+post_title: 摄像头设置
 author: adm
 post_date: 2015-10-25 12:06:57
 post_excerpt: ""
