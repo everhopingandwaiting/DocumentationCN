@@ -5,8 +5,7 @@ author: adm
 post_date: 2015-10-25 23:08:32
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/configuration/localisation-md/
+permalink: https://www.rpicn.org/documentation/configuration/localisation-md/
 published: true
 ---
 # 本地化
