@@ -1,7 +1,7 @@
 ---
 ID: 41
 post_title: SD卡（TF卡）
-author: adm
+author: 有聰哥冇甩拖
 post_date: 2015-10-16 12:25:16
 post_excerpt: ""
 layout: post
