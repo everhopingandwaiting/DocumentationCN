@@ -5,8 +5,7 @@ author: adm
 post_date: 2015-10-19 00:27:03
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/setup/monitor-connection-md/
+permalink: https://www.rpicn.org/documentation/setup/monitor-connection-md/
 published: true
 ---
 # 显示设备和接口
