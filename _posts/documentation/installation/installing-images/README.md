@@ -16,7 +16,7 @@ published: true
 
 ## 下载镜像
 
-<a href=”https://www.raspberrypi.org/downloads/” target=”_blank>树莓派官网</a>上列出了官方推荐的系统并提供了下载链接，同时其他第三方定制的系统也在该页面上推荐用户选用。
+<a href="https://www.raspberrypi.org/downloads/" target="_blank">树莓派官网</a>上列出了官方推荐的系统并提供了下载链接，同时其他第三方定制的系统也在该页面上推荐用户选用。
 
 下载了系统镜像压缩包（.zip文件）后，解压出系统镜像（.img文件）。
 
