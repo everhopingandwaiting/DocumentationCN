@@ -1,6 +1,6 @@
 ---
 ID: 306
-post_title: internetaccess.md
+post_title: 通过互联网连接树莓派
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 11:12:57
 post_excerpt: ""
