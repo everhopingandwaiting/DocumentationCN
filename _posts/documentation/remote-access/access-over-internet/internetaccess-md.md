@@ -9,7 +9,7 @@ permalink: >
   https://www.rpicn.org/documentation/remote-access/access-over-internet/internetaccess-md/
 published: true
 ---
-# Access your Raspberry Pi over the Internet
+# 通过互联网连接树莓派
 
 You can connect to your Raspberry Pi over the Internet from another computer or a mobile device.  
 
