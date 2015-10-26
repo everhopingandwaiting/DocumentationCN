@@ -5,8 +5,7 @@ author: 有聰哥冇甩拖
 post_date: 2015-10-26 14:34:17
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/remote-access/ssh/rsync-md/
+permalink: https://www.rpicn.org/documentation/remote-access/ssh/rsync-md/
 published: true
 ---
 # rsync
