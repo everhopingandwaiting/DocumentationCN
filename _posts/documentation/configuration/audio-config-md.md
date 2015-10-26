@@ -1,7 +1,7 @@
 ---
 ID: 240
 post_title: 音频设置
-author: adm
+author: 有聰哥冇甩拖
 post_date: 2015-10-24 01:03:52
 post_excerpt: ""
 layout: post
