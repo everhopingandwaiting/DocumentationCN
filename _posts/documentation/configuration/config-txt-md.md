@@ -1,6 +1,6 @@
 ---
 ID: 409
-post_title: config-txt
+post_title: config.txt
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 18:07:07
 post_excerpt: ""
