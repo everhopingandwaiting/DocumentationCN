@@ -24,7 +24,7 @@ published: true
 
 - 烧写完成后退出Win32DiskImager，再弹出SD卡。
 
-**注意：**系统镜像烧写好后（以Raspbian为例），Windows系统中看到的SD卡将变成一个只有55M左右大小的fat分区，这是正常的。因为系统镜像有两个分区，另一个分区是Linux专用的ext4，所以在Windows系统中无法直接查看该分区的文件系统。
+**注意：**系统镜像烧写好后（以Raspbian为例），Windows系统中看到的SD卡将变成一个只有55M左右大小的fat分区，这是正常的。因为系统镜像有两个分区，另一个分区格式是Linux专用的ext4，所以在Windows系统中无法直接查看该分区的文件系统。
 
 ---
 
