@@ -1,12 +1,11 @@
 ---
 ID: 60
 post_title: NOOBS
-author: adm
+author: 有聰哥冇甩拖
 post_date: 2015-10-16 23:26:28
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/installation/noobs-md/
+permalink: https://www.rpicn.org/documentation/installation/noobs-md/
 published: true
 ---
 # NOOBS
@@ -38,7 +37,7 @@ published: true
 
 #### 如何将SD卡格式化为FAT格式
 
-**注意：** 对于大于32G（如64G）的SD卡的格式化，请参考另外的[SDXC格式化](sdxc_formatting.md)指引。
+**注意：** 对于大于32G（如64G）的SD卡的格式化，请参考另外的[SDXC格式化](../sdxc_formatting.md)指引。
 
 ##### Windows
 
