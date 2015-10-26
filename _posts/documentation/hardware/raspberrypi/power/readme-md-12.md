@@ -5,8 +5,7 @@ author: adm
 post_date: 2015-10-22 13:37:02
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/hardware/raspberrypi/power/readme-md-12/
+permalink: https://www.rpicn.org/documentation/hardware/raspberrypi/power/readme-md-12/
 published: true
 ---
 # 电源
