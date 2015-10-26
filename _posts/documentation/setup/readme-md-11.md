@@ -5,7 +5,7 @@ author: adm
 post_date: 2015-10-16 11:21:45
 post_excerpt: ""
 layout: post
-permalink: https://www.rpicn.org/setup/readme-md-11/
+permalink: https://www.rpicn.org/documentation/setup/readme-md-11/
 published: true
 ---
 # 树莓派安装
