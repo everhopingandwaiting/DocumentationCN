@@ -49,7 +49,7 @@ published: true
  [1]: https://www.raspberrypi.org/
  [2]: https://alexlee.cn
  [3]: setup/README.md.11
- [4]: installation/README.md.3
+ [4]: installation/README.md.14
  [5]: usage/README.md.4
  [6]: configuration/README.md.15
  [7]: remote-access/README.md.6
