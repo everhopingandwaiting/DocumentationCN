@@ -1,7 +1,7 @@
 ---
 ID: 70
 post_title: VNC (虚拟网络计算机)
-author: adm
+author: 有聰哥冇甩拖
 post_date: 2015-10-17 01:26:29
 post_excerpt: ""
 layout: post
