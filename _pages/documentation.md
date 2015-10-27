@@ -42,7 +42,7 @@ published: true
 
 除非另有声明，本网站采用知识共享“署名-相同方式创作 4.0 国际”许可协议授权。[![Creative Commons Attribution-ShareAlike 4.0 International][14]][15] 
 
-***树莓派中文文档*** 由[树莓派中文][16]维护， 根据 [知识共享“署名-相同方式创作 4.0 国际”][15]许可协议授权。 
+***树莓派官方文档中文版*** 由[rpicn.org][16]维护， 根据 [知识共享“署名-相同方式创作 4.0 国际”][15]许可协议授权。 
 
 源自https://github.com/rpicn/DocumentationCN
 
