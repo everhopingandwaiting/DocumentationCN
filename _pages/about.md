@@ -1,6 +1,6 @@
 ---
 ID: 439
-post_title: about
+post_title: 关于
 author: 有聰哥冇甩拖
 post_date: 2015-10-27 17:55:05
 post_excerpt: ""
