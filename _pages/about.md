@@ -8,7 +8,7 @@ layout: page
 permalink: https://www.rpicn.org/about/
 published: true
 ---
-# 树莓派（Raspberry Pi）帮助文档
+# 关于树莓派（Raspberry Pi）帮助文档
 
 本文档为树莓派官方文档，由[树莓派基金会（Raspberry Pi Foundation）](https://www.raspberrypi.org/)以及基社区贡献者撰写。本帮助文档中方版本由<a href="https://alexlee.cn" target="_blank">聪头话斋</a>发起并由[rpicn.org](https://www.rpicn.org)维护。
 
@@ -25,7 +25,7 @@ published: true
 
 ### 软件
 
-本站由<a href="https://wordpress.org/" target="_blank">WordPress</a>构建，文本存放于<a href="https://github.com" target="_blank">GitHub</a>，使用插件<a href="https://wordpress.org/plugins/wp-github-sync/" target="_blank">WordPress GitHub Sync</a>同步。
+本站由<a href="https://wordpress.org/" target="_blank">WordPress</a>构建，文本存放于<a href="https://github.com/rpicn/DocumentationCN" target="_blank">GitHub</a>，使用插件<a href="https://wordpress.org/plugins/wp-github-sync/" target="_blank">WordPress GitHub Sync</a>同步。
 
 ## 贡献
 
@@ -43,4 +43,4 @@ published: true
 
 ***树莓派中文文档*** 由[树莓派中文](https://www.rpicn.org/)维护， 根据 [知识共享“署名-相同方式创作 4.0 国际”](http://creativecommons.org/licenses/by-sa/4.0/)许可协议授权。
 
-源自https://github.com/rpicn/DocumentationCN
+源自<a href="https://github.com/rpicn/DocumentationCN" target="_blank">https://github.com/rpicn/DocumentationCN</a>
