@@ -25,7 +25,7 @@ published: true
 
 ### 软件
 
-本站由<a href="https://wordpress.org/" target="_blank">WordPress</a>构建，文本存放于<a href="https://github.com/rpicn/DocumentationCN" target="_blank">GitHub</a>，使用插件<a href="https://wordpress.org/plugins/wp-github-sync/" target="_blank">WordPress GitHub Sync</a>同步。
+本站由<a href="https://wordpress.org/" target="_blank">WordPress</a>构建，文本存放于<a href="https://github.com/rpicn/DocumentationCN" target="_blank">GitHub</a>，使用插件<a href="https://wordpress.org/plugins/wp-github-sync/" target="_blank">WordPress GitHub Sync</a>同步，感谢！
 
 ## 贡献
 
