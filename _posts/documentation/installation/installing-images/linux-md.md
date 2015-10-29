@@ -8,50 +8,50 @@ layout: post
 permalink: https://www.rpicn.org/documentation/installation/installing-images/linux-md/
 published: true
 ---
-# Installing Operating System Images on Linux
+# 在Linux系统中使用镜像安装系统
 
-Please note that the use of the `dd` tool can overwrite any partition of your machine. If you specify the wrong device in the instructions below you could delete your primary Linux partition. Please be careful.
+**注意：**本文所用的工具`dd`可以擦写硬盘上的所有扇区。如果按本文指引输入的命令中，使用的盘符万一出错，将可能导致无法挽回的数据损失。请谨慎使用！（译者曾作s……）
 
-- Run `df -h` to see what devices are currently mounted.
+首先检查一下当前有哪些储存设备已加载，输入命令：
 
-- If your computer has a slot for SD cards, insert the card. If not, insert the card into an SD card reader, then connect the reader to your computer.
+`sudo df -h`
 
-- Run `df -h` again. The new device that has appeared is your SD card. The left column gives the device name of your SD card; it will be listed as something like `/dev/mmcblk0p1` or `/dev/sdd1`. The last part (`p1` or `1` respectively) is the partition number but you want to write to the whole SD card, not just one partition. Therefore you need to remove that part from the name (getting, for example, `/dev/mmcblk0` or `/dev/sdd`) as the device for the whole SD card. Note that the SD card can show up more than once in the output of df; it will do this if you have previously written a Raspberry Pi image to this SD card, because the Raspberry Pi SD images have more than one partition.
+- 如果电脑有SD卡插槽，就使用SD卡插槽；如果没有，就使用USB的SD卡读卡器。
 
-- Now that you've noted what the device name is, you need to unmount it so that files can't be read or written to the SD card while you are copying over the SD image.
+- 再次输入`sudo df -h`，自动挂载新的储存设备应该会显示出来，就是刚才插入的SD卡。左边一栏是SD卡的设备名称，可能显示成`/dev/mmcblk0p1`或者是`/dev/sdd1`。设备名称最后的部分，`/dev/mmcblk0p1`中的`p1`或`/dev/sdd1`中的`1`，意思就是这个储存设备的第几个分区。但烧写SD卡需要对整个储存设备进行操作，而不仅对一个分区，所以稍后将会使用的设备名称应该是`/dev/mmcblk0`或`/dev/sdd`。需要注意的是，如果成功烧写SD卡后，会出现两次，因为Raspbian的SD卡镜像中有两个分区。
 
-- Run `umount /dev/sdd1`, replacing `sdd1` with whatever your SD card's device name is (including the partition number).
+- 获得储存设备名称后，SD卡需要先取消挂载方可进行烧写。
 
-- If your SD card shows up more than once in the output of `df` due to having multiple partitions on the SD card, you should unmount all of these partitions.
+- 输入命令：
+    `sudo umount /dev/sdd1`
+    如果设备名称不是`sdd1`，只需替换为实际的设备名称即可。
 
-- In the terminal, write the image to the card with the command below, making sure you replace the input file `if=` argument with the path to your `.img` file, and the `/dev/sdd` in the output file `of=` argument with the right device name. This is very important, as you will lose all data on the hard drive if you provide the wrong device name. Make sure the device name is the name of the whole SD card as described above, not just a partition of it; for example `sdd`, not `sdds1` or `sddp1`; or `mmcblk0`, not `mmcblk0p1`.
+- 如果刚才的`df`命令得到系统的返回显示SD卡不只一个分区，则需要取消所有分区的挂载后方可进行下一步。
 
-    ```bash
-    dd bs=4M if=2015-02-16-raspbian-wheezy.img of=/dev/sdd
-    ```
+- 在终端使用命令将镜像烧写到SD卡中。下面的命令中，`if=`（“input file”的缩写）后面要确保镜像的路径名没写错，`of=`（“output file”的缩写）后面同样要确保储存设备的名称没写错。**注意：**万一写错了储存设备的名称将可能导致无法挽回的数据损失。另外，设备名称应该是整个储存设备而不只是某个分区，例如，应该是`sdd`，而不是`sdds1`，`sddp1`；或者应该是`mmcblk0`而不是`mmcblk0p1`。烧写命令为：
 
-- Please note that block size set to `4M` will work most of the time; if not, please try `1M`, although this will take considerably longer.
+`sudo dd bs=4M if=2015-09-24-raspbian-jessie.img of=/dev/sdd`
 
-- Also note that if you are not logged in as root you will need to prefix this with `sudo`.
+- 需要指出的是，`bs`（“block size”，即分块大小）如果指定为`4M`，通常不会有什么问题。万一不成功，建议尝试更为`1M`，但是烧写SD卡的时间可能会更长。
 
-- The `dd` command does not give any information of its progress and so may appear to have frozen; it could take more than five minutes to finish writing to the card. If your card reader has an LED it may blink during the write process. To see the progress of the copy operation you can run `pkill -USR1 -n -x dd` in another terminal, prefixed with `sudo` if you are not logged in as root. The progress will be displayed in the original window and not the window with the `pkill` command; it may not display immediately, due to buffering.
+- 如果用户不是以`root`身份登入系统的话，命令的开关需要加上`sudo`。（译者注：`sudo`就好像一个令牌，临时告诉系统当前用户其实是超级用户大Boss！:D）
 
-- Instead of `dd` you can use `dcfldd`; it will give a progress report about how much has been written.
+- `dd`命令在执行的过程中并不会显示执行进度，命令行的光标会眨眼，表示电脑在工作中，可能五分钟后才能完成烧写。另外，如果使用了带指示灯的读卡器，指示灯在烧写的过程中会快速闪烁。如果非要查看烧写的进度不可，可以在另一个终端中执行命令`sudo pkill -USR1 -n -x dd`，稍后，原来正在执行`dd`命令的终端会显示其进度。
 
-- You can check what's written to the SD card by `dd`-ing from the card back to another image on your hard disk, truncating the new image to the same size as the original, and then running `diff` (or `md5sum`) on those two images.
+- 除了`dd`之外，用户也可使用`dcfldd`程序来烧写SD卡，这个程序可以显示烧写进度。
 
-- The SD card might be bigger than the original image, and dd will make a copy of the whole card. We must therefore truncate the new image to the size of the original image.  Make sure you replace the input file if= argument with the right device name. `diff` should report that the files are identical.
+- SD卡烧写完毕后，如果需要校验写入到SD卡的数据跟原来镜像文件的数据是否一致，可以将`dd`刚才烧写到SD卡的数据写回硬盘的一个新的.img文件中，再将文件尺寸改回原来镜像的大小，最后使用`diff`（或者`md5sum`）比较两个镜像文件的特征。
 
-    ```bash
-    dd bs=4M if=/dev/sdd of=from-sd-card.img
-    truncate --reference 2015-02-16-raspbian-wheezy.img from-sd-card.img
-    diff -s from-sd-card.img 2015-02-16-raspbian-wheezy.img
-    ```
+- SD卡的大小总会比原镜像文件的大小更大，而`dd`又会将整个SD卡（包括空的位置）一并复制出来，所以需要缩小新复制出来的镜像，目标的尺寸是原镜像的大小。请确保`if=`后面的储存设置名称没错误。`diff`可以非常容易地分辨出二者是否同样。以下为校验的方法：
 
-- Run `sync`; this will ensure the write cache is flushed and that it is safe to unmount your SD card.
+`sudo dd bs=4M if=/dev/sdd of=from-sd-card.img`
+`truncate --reference 2015-02-16-raspbian-wheezy.img from-sd-card.img`
+`diff -s from-sd-card.img 2015-02-16-raspbian-wheezy.img`
 
-- Remove the SD card from the card reader.
+- 运行`sync`，刷新缓存，SD卡的挂载就解除了。
+
+- 拔出SD卡吧！
 
 ---
 
-*This article uses content from the eLinux wiki page [RPi_Easy_SD_Card_Setup](http://elinux.org/RPi_Easy_SD_Card_Setup), which is shared under the [Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
+*注：本文参考了eLinux的文章[RPi_Easy_SD_Card_Setup](http://elinux.org/RPi_Easy_SD_Card_Setup，其许可证为：[Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
