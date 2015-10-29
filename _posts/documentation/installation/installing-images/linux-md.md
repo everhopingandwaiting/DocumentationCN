@@ -45,8 +45,8 @@ published: true
 - SD卡的大小总会比原镜像文件的大小更大，而`dd`又会将整个SD卡（包括空的位置）一并复制出来，所以需要缩小新复制出来的镜像，目标的尺寸是原镜像的大小。请确保`if=`后面的储存设置名称没错误。`diff`可以非常容易地分辨出二者是否同样。以下为校验的方法：
 
 `sudo dd bs=4M if=/dev/sdd of=from-sd-card.img`
-`truncate --reference 2015-02-16-raspbian-wheezy.img from-sd-card.img`
-`diff -s from-sd-card.img 2015-02-16-raspbian-wheezy.img`
+`truncate --reference 2015-09-24-raspbian-jessie.img from-sd-card.img`
+`diff -s from-sd-card.img 2015-09-24-raspbian-jessie.img`
 
 - 运行`sync`，刷新缓存，SD卡的挂载就解除了。
 
