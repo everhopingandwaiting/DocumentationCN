@@ -54,4 +54,4 @@ published: true
 
 ---
 
-*注：本文参考了eLinux的文章[RPi_Easy_SD_Card_Setup](http://elinux.org/RPi_Easy_SD_Card_Setup，其许可证为：[Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
+*注：本文参考了eLinux的文章[RPi_Easy_SD_Card_Setup](http://elinux.org/RPi_Easy_SD_Card_Setup)，其许可证为：[Creative Commons Attribution-ShareAlike 3.0 Unported license](http://creativecommons.org/licenses/by-sa/3.0/)*
