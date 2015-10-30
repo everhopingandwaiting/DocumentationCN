@@ -106,4 +106,4 @@ Restart `pure-ftpd` again and apply the above settings.
 sudo service pure-ftpd restart
 ```
 
-For more information of Pure-FTPd and documentation, please get on official website of [Pure-FTPd](http://www.pureftpd.org/project/pure-ftpd).
+想查询Pure-FTPd的其他信息和官方文档，请浏览<a href="http://www.pureftpd.org/project/pure-ftpd" target="_blank">Pure-FTPd的官方网站</a>。
