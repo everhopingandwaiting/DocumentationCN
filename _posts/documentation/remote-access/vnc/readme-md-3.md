@@ -163,8 +163,8 @@ update-rc.d vncboot defaults
 
  [1]: ../ssh/README.md
  [2]: http://www.tightvnc.com/download.php
- [3]: linux.md
- [4]: mac.md
- [5]: windows.md
+ [3]: ../linux.md.2
+ [4]: ../mac.md.2
+ [5]: ../windows.md.2
  [6]: http://elinux.org/RPi_VNC_Server
  [7]: http://creativecommons.org/licenses/by-sa/3.0/
