@@ -11,18 +11,18 @@ published: true
 ---
 # 在Linux系统中通过VNC连接树莓派
 
-It is likely that your Linux distribution ships with a `Remote Desktop Viewer` application you can use to connect to your Pi using VNC. This can usually be found under the Applications / Internet menu (see the Ubuntu example below).
+Linux发行版一般会附带一个名为`Remote Desktop Viewer`的应用程序，用户可以使用该程序连接树莓派。该程序通常可以在`Applications / Internet`菜单中找到（以下为Ubuntu的示例）。
 
-![VNC in Ubuntu Applications menu](images/linux/vnc-ubuntu-menu.png)
+![VNC in Ubuntu Applications menu](https://github.com/rpicn/documentation/raw/master/remote-access/vnc/images/linux/vnc-ubuntu-menu.png)
 
-Once you have the Remote Desktop Viewer open click the connect button and you'll be see the following dialog. Set the Protocol option to `VNC` and enter the IP address of the Raspberry Pi followed by the screen number (`:0` or `:1`). For example: `192.168.0.6:1`
+打开了`Remote Desktop Viewer`后，将会看到下面的对话框。选择`VNC`协议，然后输入树莓派的IP地址，接着加上端口号（`:0`或`:1`）。例如：`192.168.0.6:1`
 
-![Connection dialog](images/linux/vnc-ubuntu-connect.png)
+![Connection dialog](https://github.com/rpicn/documentation/raw/master/remote-access/vnc/images/linux/vnc-ubuntu-connect.png)
 
-Click the Connect button and you will be prompted for the password that was specified when configuring the VNC server on the Raspberry Pi earlier. You should then find yourself at the Raspberry Pi desktop.
+点击`Connect`按钮，程序会提示询问密码，将VNC服务启动时设定的密码输入，就可看见树莓派的桌面了。
 
-![Raspberry Pi desktop](images/linux/vnc-ubuntu-connected.png)
+![Raspberry Pi desktop](https://github.com/rpicn/documentation/raw/master/remote-access/vnc/images/linux/vnc-ubuntu-connected.png)
 
-Don't use the logout menu as you would on the Raspberry Pi desktop when you want to close down. Just close the Remote Desktop Viewer window itself and then use the kill command on the Raspberry Pi, described above, to shut down the VNC server.
+如果想关闭连接，请勿在树莓派的桌面环境中点击退出，只要关闭当前Remote Desktop Viewer窗口即可，随后再用`kill`命令来关闭VNC服务器。
 
-An alternative program is `Remmina Remote Desktop Client`, available from [remmina.sourceforge.net](http://remmina.sourceforge.net)
+远程桌面客户端非常多，例如也可以使用一款名为`Remmina Remote Desktop Client`的程序，前往[remmina.sourceforge.net](http://remmina.sourceforge.net)下载。
