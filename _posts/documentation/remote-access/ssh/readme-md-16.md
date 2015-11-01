@@ -12,7 +12,7 @@ published: true
 
 用户可以使用`ssh`命令在网络上的另一台电脑远程连接树莓派，进入命令行界面。
 
-请注意：通过`ssh`只可进入命令行界面，而不是图形化的桌面环境。如果需要进入桌面，请参考[VNC](../../vnc/README.md)或在Windows上使用<a href="http://mobaxterm.mobatek.net/" target="_blank">MobaXterm</a>。
+请注意：通过`ssh`只可进入命令行界面，而不是图形化的桌面环境。如果需要进入桌面，请参考[VNC](../../vnc/README.md.3)或在Windows上使用<a href="http://mobaxterm.mobatek.net/" target="_blank">MobaXterm</a>。
 
 同时，用户亦可以更改SSH服务器的设定选择启用或禁用SSH服务（默认是已启用的），只要使用[raspi-config](../../../configuration/raspi-config.md)便可轻松切换：
 
