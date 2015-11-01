@@ -25,4 +25,4 @@ Linux发行版一般会附带一个名为`Remote Desktop Viewer`的应用程序�
 
 如果想关闭连接，请勿在树莓派的桌面环境中点击退出，只要关闭当前Remote Desktop Viewer窗口即可，随后再用`kill`命令来关闭VNC服务器。
 
-远程桌面客户端非常多，例如也可以使用一款名为`Remmina Remote Desktop Client`的程序，前往[remmina.sourceforge.net](http://remmina.sourceforge.net)下载。
+远程桌面客户端非常多，例如也可以使用一款名为`Remmina Remote Desktop Client`的程序，前往<a href="http://remmina.sourceforge.net" target="_blank">remmina.sourceforge.net</a>下载。
