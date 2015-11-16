@@ -26,63 +26,45 @@ published: true
 
 `ssh-keygen -t rsa -C eben@pi`
 
+用户可以使用引号以不同的名称用于区分，例如`ssh-keygen -t rsa -C "Raspberry Pi #123"`。
+
+输入这个命令后，用户会被提示保存密钥。建议按下`Enter`确认保存在默认路径（`/home/pi/.ssh/id_rsa`）。
+
+用户还会被要求输入另外一个密码短语，这个密码短语是用来保护用户私钥的，确保不被盗用。如果需要使用密码短语，输入完成后按下`Enter`，然后再输入一次密码短语确认。如果不需要使用密码短语，可以选择不输入。
+
+这时，输入下面这个命令，应该可以在`.ssh`目录下查找到`id_rsa`和`id_rsa.pub`：
+
+`ls ~/.ssh`
+
+`authorized_keys  id_rsa  id_rsa.pub  known_hosts`
+
+`id_rsa`文件就是用户的私钥，需要保存在本地电脑上。
+
+`id_rsa.pub`是公钥，需要保存在远端电脑上。当用户在本地发出连接请求时，远端电脑会校验用户的私钥，通过验证后就允许用户远程连接了。
+
+可以用下面这条命令打开密钥，看看它长什么样子：
+
+`cat ~/.ssh/id_rsa.pub`
+
+如无意外，终端会显示：
+
+`ssh-rsa <这堆乱码人类应该无法短时间内破译> eben@pi`
+
+## 将公钥复制到树莓派中
+
+使用下面的命令就可以通过SSH将`authorized_keys`文件追加到树莓派上去就可以加入公钥了：
+
+`cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'`
+
+请注意，这时还需要输入一次密码。
+
+以后再输入`ssh <USERNAME>@<IP-ADDRESS>`命令后，就可以不用再输入密码了。
+
+如果系统提示`Agent admitted failure to sign using the key.`，这时需要将RSA或DSA数字证书添加到校验代理`ssh-agent`去，使用以下命令即可：
+
+`ssh-add`
 
 
+如果不成功，可以用这条命令`rm ~/.ssh/id*`删除所以密钥再重新按本文所述步骤再次尝试。
 
-
-
-
-
-You can also use a more descriptive comment using quotes if you have spaces, e.g. `ssh-keygen -t rsa -C "Raspberry Pi #123"`
-
-Upon entering this command, you'll be asked where to save the key. We suggest you save it in the default location (`/home/pi/.ssh/id_rsa`) by just hitting `Enter`.
-
-You'll also be asked to enter a passphrase. This is extra security which will make the key unusable without your passphrase, so if someone else copied your key, they could not impersonate you to gain access. If you choose to use a passphrase, type it here and press `Enter`, then type it again when prompted. Leave empty for no passphrase.
-
-Now you should see the files `id_rsa` and `id_rsa.pub` in your `.ssh` directory in your home folder:
-
-```
-ls ~/.ssh
-```
-
-```
-authorized_keys  id_rsa  id_rsa.pub  known_hosts
-```
-
-The `id_rsa` file is your private key. Keep this on your computer.
-
-The `id_rsa.pub` file is your public key. This is what you put on machines you want to connect to. When the machine you try to connect to matches up your public and private key, it will allow you to connect.
-
-Take a look at your public key to see what it looks like:
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-It should be in the form:
-
-```
-ssh-rsa <REALLY LONG STRING OF RANDOM CHARACTERS> eben@pi
-```
-
-## Copy your public key to your Raspberry Pi
-
-To copy your public key to your Raspberry Pi, use the following command to append the public key to your `authorized_keys` file on the Pi, sending it over SSH:
-
-```
-cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
-```
-
-Note that this time you will have to authenticate with your password.
-
-Now try `ssh <USER>@<IP-ADDRESS>` and you should connect without a password prompt.
-
-If you see a message "Agent admitted failure to sign using the key." then add your RSA or DSA identities to the authentication agent, ssh-agent 
-the execute the following command:  
-```
-ssh-add
-```
-
-If this did not work, delete your keys with `rm ~/.ssh/id*` and follow the instructions again.
-
-You can also send files over SSH using the `scp` command (secure copy). See the [SCP guide](../scp.md) for more information.
+另外，用户也可以使用`scp`命令通过SSH连接将文件复制到远程的电脑上去，详细请参考[SCP指引](../scp.md)。
