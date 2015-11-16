@@ -10,25 +10,28 @@ published: true
 ---
 # 免密码SSH登陆
 
-It is possible to configure your Pi to allow your computer to access it without providing a password each time you try to connect. To do this you need to generate an SSH key:
+如果使用SSH的公、私密钥配对，用户可以不必每次输入密码登入树莓派。
 
-## Check for existing SSH keys
+## 先检查现有的SSH密钥
 
-First, check whether there are already keys on your computer (the one you're connecting from):
+首先检查本地电脑是否存在密钥：
 
-```
-ls ~/.ssh
-```
+`ls ~/.ssh`
 
-If you see files named `id_rsa.pub` or `id_dsa.pub` you have keys set up already, so you can skip the generating keys step (or delete these files with `rm id*` and make new keys).
+如果找到名为`id_rsa.pub`或`id_dsa.pub`，说明本地电脑中已有密钥，可先跳过下面“生成密钥”这步（当然也可以先用`rm id*`这个命令删除后继续“生成密钥”）。
 
-## Generate new SSH keys
+## 生成密钥
 
-To generate new SSH keys enter the following command (Choose a sensible hostname such as `<YOURNANME>@<YOURDEVICE>` where we have used `eben@pi`):
+输入以下命令生成密钥（建议使用主机名用作识别，如`<YourName>@<YourDevice>`，本文所举例子使用`eben@pi`）：
 
-```
-ssh-keygen -t rsa -C eben@pi
-```
+`ssh-keygen -t rsa -C eben@pi`
+
+
+
+
+
+
+
 
 You can also use a more descriptive comment using quotes if you have spaces, e.g. `ssh-keygen -t rsa -C "Raspberry Pi #123"`
 
