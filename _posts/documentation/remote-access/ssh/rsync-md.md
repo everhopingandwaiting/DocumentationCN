@@ -30,4 +30,4 @@ rsync -avz -e ssh pi@192.168.1.10:camera/ camera/
 
 这个命令会从将树莓派上`camera`文件夹中的所有文件复制到电脑上的`camera`文件夹中去。
 
-如果需要定时执行这个命令，可以在[cron](../../linux/usage/cron.md)中执行。
+如果需要定时执行这个命令，可以在[cron](../../../linux/usage/cron.md)中执行。
