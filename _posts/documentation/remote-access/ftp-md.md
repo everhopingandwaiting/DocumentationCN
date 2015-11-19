@@ -1,6 +1,6 @@
 ---
 ID: 459
-post_title: FTP.md
+post_title: FTP服务器
 author: 有聰哥冇甩拖
 post_date: 2015-10-30 23:28:41
 post_excerpt: ""
@@ -9,9 +9,9 @@ permalink: >
   https://www.rpicn.org/documentation/remote-access/ftp-md/
 published: true
 ---
-# FTP
+# FTP服务器
 
-FTP (File Transfer Protocol) can be used to transfer files between a Raspberry Pi and another computer. Although with default program `sftp-server` of Raspbian the users with sufficient privilege can transfer files or directories, access to the filesystem of the limited users is also required oftenly. Follow the steps below to set up an FTP server:
+用户可以使用FTP（文件传输协议）让树莓派和其他电脑互相传输文件。虽然Raspbian自带的程序`sftp-server`可以让有着特定权限的用户传输文件和目录，但是很多时候还是需要限制他们的文件读取权限的。本文将介绍如何使用Pure-FTP搭建一个FTP服务器：
 
 ## Install Pure-FTPd
 
