@@ -1,6 +1,6 @@
 ---
 ID: 322
-post_title: rsync
+post_title: rsync自动同步
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 14:34:17
 post_excerpt: ""
@@ -10,26 +10,24 @@ published: true
 ---
 # rsync
 
-You can use the tool `rsync` to synchronise folders between computers. You might want to transfer some files from your desktop computer or laptop to your Pi, and for them to be kept up to date, or you might want the pictures taken by your Pi transferred to your computer automatically.
+用户可以使用`rsync`在不同的电脑之间互相同步。比如在台式电脑或者手提电脑和树莓派之间同步文件，又或者树莓派拍好的照片自动同步到电脑上。通过SSH协议使用`rsync`就可以自动与其他电脑同步了。
 
-Using `rsync` over SSH allows you to transfer files to your computer automatically.
+本文所举的例子，可以设置树莓派与一台Linux电脑同步一个照片文件夹：
 
-Here is an example of setting up the sync of a folder of pictures on your Pi to your computer:
-
-On your computer, create a folder called `camera`:
+首先在电脑上新建一个名为`camera`的文件夹：
 
 ```
 mkdir camera
 ```
 
-Look up the Pi's IP address by logging in to it and running `hostname -I`. In this example the Pi is creating a timelapse by capturing a photo every minute, and saving the picture with a timestamp in the local folder `camera` on its SD card.
+再登入树莓派，执行`hostname -I`命令来查询IP地址。本文的例子中，假设树莓派已设置好，会定时摄影然后加时间戳再保存在SD卡的`camera`文件夹中。
 
-Now run the following command (substituting your own Pi's IP address):
+现在在电脑执行下面的命令（先按实际情况将树莓派的IP地址替换好）：
 
 ```
 rsync -avz -e ssh pi@192.168.1.10:camera/ camera/
 ```
 
-This will copy all files from the Pi's `camera` folder to your computer's new `camera` folder.
+这个命令会从将树莓派上`camera`文件夹中的所有文件复制到电脑上的`camera`文件夹中去。
 
-In order to keep the folders in sync, run this command in [cron](../../linux/usage/cron.md).
+如果需要定时执行这个命令，可以在[cron](../../linux/usage/cron.md)中执行。
