@@ -1,19 +1,14 @@
 ---
 ID: 322
 post_title: rsync自动同步
-author:
-  - 有聰哥冇甩拖
-post_date:
-  - 2015-10-26 14:34:17
-post_excerpt:
-  - ""
+author: 有聰哥冇甩拖
+post_date: 2015-10-26 14:34:17
+post_excerpt: ""
 layout: post
-permalink:
-  - >
-    /documentation/remote-access/ssh/rsync-md/
+permalink: https://www.rpicn.org/documentation/remote-access/ssh/rsync-md/
 published: true
 ---
-# rsync
+# rsync自动同步
 
 用户可以使用`rsync`在不同的电脑之间互相同步。比如在台式电脑或者手提电脑和树莓派之间同步文件，又或者树莓派拍好的照片自动同步到电脑上。通过SSH协议使用`rsync`就可以自动与其他电脑同步了。
 
