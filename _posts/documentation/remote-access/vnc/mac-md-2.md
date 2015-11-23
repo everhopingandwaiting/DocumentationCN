@@ -1,12 +1,11 @@
 ---
 ID: 483
-post_title: Mac
+post_title: 在Mac系统中通过VNC连接树莓派
 author: 有聰哥冇甩拖
 post_date: 2015-11-05 23:58:25
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/remote-access/vnc/mac-md-2/
+permalink: https://www.rpicn.org/documentation/remote-access/vnc/mac-md-2/
 published: true
 ---
 # 在Mac系统中通过VNC连接树莓派
