@@ -23,18 +23,18 @@ published: true
 
 首先连接互联网，再输入以下命令更新软件：
 
-`sudo apt-get update`
-`sudo apt-get upgrade`
+    sudo apt-get update
+    sudo apt-get upgrade
 
 使用`raspi-config`程序启用摄像头模块：
 
-`sudo raspi-config`
+    sudo raspi-config
 
 使用上下方向键移到摄像头选项，再选择启用。在退出`raspi-config`时，程序会提示建议重启。重启后树莓派会应用相应的设置，并且将为GPU分配足够的内存，保证摄像头有足够资源正常运行。
 
 下面的命令可以测试摄像头的是否正常工作：
 
-` raspistill -v -o test.jpg`
+    raspistill -v -o test.jpg
 
 如果摄像头正常工作，显示器将显示五秒的影像预览后拍摄照片，保存为test.jpg，同时也会显示其他的一些信息。
 

@@ -22,7 +22,7 @@ published: true
 
 下面的命令可以改由HDMI播放音频：
 
-`amixer cset numid=3 2`
+    amixer cset numid=3 2
 
 这条命令将输出接口指定为`2`，即HDMI。若指定为`1`则选择模拟输出（耳机插孔）。默认设置为`0`，即自动。
 
@@ -30,7 +30,7 @@ published: true
 
 输入以下命令，打开[raspi-config](raspi-config.md)：
 
-`sudo raspi-config`
+    sudo raspi-config
 
 屏幕将显示如下画面：
 
