@@ -5,8 +5,7 @@ author: 有聰哥冇甩拖
 post_date: 2015-11-19 15:45:01
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/remote-access/ssh/windows-md-3/
+permalink: https://www.rpicn.org/documentation/remote-access/ssh/windows-md-3/
 published: true
 ---
 # 在Windows系统通过SSH连接树莓派
@@ -31,9 +30,7 @@ published: true
 
 这时应该可以看到树莓派的命令行提示符，这个提示符和在树莓派本机上登入时看到的一样。
 
-```
-pi@raspberrypi ~ $
-```
+    pi@raspberrypi ~ $
 
 ![PuTTY window](https://raw.githubusercontent.com/raspberrypi/documentation/master/remote-access/ssh/images/ssh-win-window.png)
 

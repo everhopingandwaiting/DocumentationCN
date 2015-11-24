@@ -3,8 +3,7 @@ ID: 491
 post_title: 在Windows系统中通过VNC连接树莓派
 author: 有聰哥冇甩拖
 post_date: 2015-11-06 23:59:27
-post_excerpt:
-  - ""
+post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/vnc/windows-md-2/
 published: true

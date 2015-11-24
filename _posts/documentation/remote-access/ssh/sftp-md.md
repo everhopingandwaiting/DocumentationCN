@@ -1,6 +1,6 @@
 ---
 ID: 554
-post_title: SFTP
+post_title: SFTP文件传输
 author: 有聰哥冇甩拖
 post_date: 2015-11-17 16:26:08
 post_excerpt: ""
@@ -8,7 +8,7 @@ layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/ssh/sftp-md/
 published: true
 ---
-# SFTP
+# SFTP（SSH File Transfer Protocol）文件传输
 
 SFTP是通过SSH进行文件读取、传输、管理的网络协议。用户可以使用SFTP对树莓派上的文件进行更改、浏览、编辑等操作。与[FTP](../../ftp.md)不同，SFTP更容易设置，因为树莓派默认已开启SSH。
 
@@ -26,13 +26,11 @@ SFTP是通过SSH进行文件读取、传输、管理的网络协议。用户可�
 
 首先在本地打开Nautilus，然后选择`File`，`Connect to Server`，输入以下信息：
 
-```
-Type: SSH
-Server: <The Pi's IP address>
-Port: 22 (default)
-User name: pi (default)
-Password: raspberry (default)
-```
+	Type: SSH
+	Server: <The Pi's IP address>
+	Port: 22 (default)
+	User name: pi (default)
+	Password: raspberry (default)
 
 其他参考：[IP地址](../../../troubleshooting/hardware/networking/ip-address.md)。
 

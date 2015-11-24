@@ -16,13 +16,13 @@ published: true
 
 首先在电脑上新建一个名为`camera`的文件夹：
 
-`mkdir camera`
+    mkdir camera
 
 再登入树莓派，执行`hostname -I`命令来查询IP地址。本文的例子中，假设树莓派已设置好，会定时摄影然后加时间戳再保存在SD卡的`camera`文件夹中。
 
 现在在电脑执行下面的命令（先按实际情况将树莓派的IP地址替换好）：
 
-`rsync -avz -e ssh pi@192.168.1.10:camera/ camera/`
+    rsync -avz -e ssh pi@192.168.1.10:camera/ camera/
 
 这个命令会从将树莓派上`camera`文件夹中的所有文件复制到电脑上的`camera`文件夹中去。
 

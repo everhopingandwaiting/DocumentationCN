@@ -16,7 +16,7 @@ published: true
 
 首先检查本地电脑是否存在密钥：
 
-`ls ~/.ssh`
+    ls ~/.ssh
 
 如果找到名为`id_rsa.pub`或`id_dsa.pub`，说明本地电脑中已有密钥，可先跳过下面“生成密钥”这步（当然也可以先用`rm id*`这个命令删除后继续“生成密钥”）。
 
@@ -24,7 +24,7 @@ published: true
 
 输入以下命令生成密钥（建议使用主机名用作识别，如`<YourName>@<YourDevice>`，本文所举例子使用`eben@pi`）：
 
-`ssh-keygen -t rsa -C eben@pi`
+    ssh-keygen -t rsa -C eben@pi
 
 用户可以使用引号以不同的名称用于区分，例如`ssh-keygen -t rsa -C "Raspberry Pi #123"`。
 
@@ -34,9 +34,9 @@ published: true
 
 这时，输入下面这个命令，应该可以在`.ssh`目录下查找到`id_rsa`和`id_rsa.pub`：
 
-`ls ~/.ssh`
+    ls ~/.ssh
 
-`authorized_keys  id_rsa  id_rsa.pub  known_hosts`
+    authorized_keys  id_rsa  id_rsa.pub  known_hosts
 
 `id_rsa`文件就是用户的私钥，需要保存在本地电脑上。
 
@@ -44,17 +44,17 @@ published: true
 
 可以用下面这条命令打开密钥，看看它长什么样子：
 
-`cat ~/.ssh/id_rsa.pub`
+    cat ~/.ssh/id_rsa.pub
 
 如无意外，终端会显示：
 
-`ssh-rsa <这堆乱码人类应该无法短时间内破译> eben@pi`
+    ssh-rsa <这堆乱码人类应该无法短时间内破译> eben@pi
 
 ## 将公钥复制到树莓派中
 
 使用下面的命令就可以通过SSH将`authorized_keys`文件追加到树莓派上去就可以加入公钥了：
 
-`cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'`
+    cat ~/.ssh/id_rsa.pub | ssh <USERNAME>@<IP-ADDRESS> 'cat >> .ssh/authorized_keys'
 
 请注意，这时还需要输入一次密码。
 
@@ -62,7 +62,7 @@ published: true
 
 如果系统提示`Agent admitted failure to sign using the key.`，这时需要将RSA或DSA数字证书添加到校验代理`ssh-agent`去，使用以下命令即可：
 
-`ssh-add`
+    ssh-add
 
 
 如果不成功，可以用这条命令`rm ~/.ssh/id*`删除所以密钥再重新按本文所述步骤再次尝试。

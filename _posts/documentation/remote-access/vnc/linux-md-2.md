@@ -1,6 +1,6 @@
 ---
 ID: 471
-post_title: Linux
+post_title: 在Linux系统中通过VNC连接树莓派
 author: 有聰哥冇甩拖
 post_date: 2015-11-01 23:09:51
 post_excerpt: ""

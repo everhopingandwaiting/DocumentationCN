@@ -18,7 +18,7 @@ published: true
 
 要从另一台电脑连接到树莓派，输入下面的命令，请将`<IP>`替换成树莓派的IP地址：
 
-`ssh pi@<IP>`
+    ssh pi@<IP>
 
 如果提示错误信息`connection timed out`，很可能是因为输入的树莓派IP地址有误。
 
@@ -30,9 +30,7 @@ published: true
 
 如果需要使用其他用户名登入，只要在`ssh`命令中作相应的改动便可，例如：`ssh eben@192.168.1.5`。
 
-```
-eben@raspberrypi ~ $
-```
+    eben@raspberrypi ~ $
 
 这时说明已成功通过SSH远程连接树莓派，也可以执行命令了。
 

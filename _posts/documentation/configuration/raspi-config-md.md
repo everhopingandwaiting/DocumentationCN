@@ -16,9 +16,7 @@ published: true
 
 第一次运行Raspbian时，系统会提醒用户运行`raspi-config`。要开始使用这个工具，只需要在终端输入这个命令：
 
-```
-sudo raspi-config
-```
+    sudo raspi-config
 
 `sudo`意思是临时以超级用户执行后面的命令，因当前用户`pi`可能不具备修改一些特别文件的权限。
 

@@ -1,6 +1,6 @@
 ---
 ID: 313
-post_title: SSH
+post_title: SSH连接
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 11:55:19
 post_excerpt: ""
@@ -8,7 +8,7 @@ layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/ssh/readme-md-16/
 published: true
 ---
-# SSH (Secure Shell)
+# SSH（Secure Shell）连接
 
 用户可以使用`ssh`命令在网络上的另一台电脑远程连接树莓派，进入命令行界面。
 
@@ -18,7 +18,7 @@ published: true
 
 在终端中输入：
 
-`sudo raspi-config`
+    sudo raspi-config
 
 找到`ssh`，按下`Enter`，然后就可选择启用或禁用SSH服务器了。
 

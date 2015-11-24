@@ -18,7 +18,7 @@ Apache是一个受欢迎的网站服务器程序，还可以安装在树莓派�
 
 首先，在终端输入以下命令，安装`apache2`：
 
-`sudo apt-get install apache2 -y`
+    sudo apt-get install apache2 -y
 
 ## 测试网页服务器
 
@@ -36,15 +36,15 @@ Apache是一个受欢迎的网站服务器程序，还可以安装在树莓派�
 
 可先前往这个目录查看一下里面的文件：
 
-`cd /var/www/html
-ls -al`
+    cd /var/www/html
+    ls -al
 
 系统会显示：
 
-`total 12
-drwxr-xr-x  2 root root 4096 Jan  8 01:29 .
-drwxr-xr-x 12 root root 4096 Jan  8 01:28 ..
--rw-r--r--  1 root root  177 Jan  8 01:29 index.html`
+    total 12
+    drwxr-xr-x  2 root root 4096 Jan  8 01:29 .
+    drwxr-xr-x 12 root root 4096 Jan  8 01:28 ..
+    -rw-r--r--  1 root root  177 Jan  8 01:29 index.html`
 
 这说明`/var/www/html/`目录下有一个名为`index.html`的文件。`.`指的是`/var/www/html/`目录自己本身，而`..`指的是父级目录，即`/var/www/`。
 
@@ -69,33 +69,27 @@ drwxr-xr-x 12 root root 4096 Jan  8 01:28 ..
 
 如果需要让Apache处理PHP网页，需要先安装PHP5以及Apache需要用到的模块，在终端输入以下命令：
 
-```
-sudo apt-get install php5 libapache2-mod-php5 -y
-```
+    sudo apt-get install php5 libapache2-mod-php5 -y
 
 现在先将`index.html`删除：
 
-```
-sudo rm index.html
-```
+    sudo rm index.html
 
 再新建一个名为`index.php`的文件。
 
-```
-sudo nano index.php
-```
+    sudo nano index.php
 
 然后在这个文件中写入一些PHP语句，比如，先输入`sudo nano index.php`，然后复制下列语句：
 
-`<?php echo "hello world"; ?>`
+    <?php echo "hello world"; ?>
 
 按下`Ctrl`加`X`，再按下`Y`，再按下`Enter`，这样就保存了刚才的更改。这时刷新浏览器，应该可以看到“hello world”。这个网页还是静态但能说明PHP已正常工作，下面这句是动态的：
 
-`<?php echo date('Y-m-d H:i:s'); ?>`
+    <?php echo date('Y-m-d H:i:s'); ?>
 
 又或者用这句查看PHP的信息：
 
-`<?php phpinfo(); ?>`
+    <?php phpinfo(); ?>
 
 ### 再进一步 - WordPress
 
