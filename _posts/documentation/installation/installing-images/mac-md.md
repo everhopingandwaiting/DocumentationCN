@@ -1,22 +1,22 @@
 ---
 ID: 421
-post_title: Mac
+post_title: 在Mac OS系统中使用镜像安装系统
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 22:18:41
 post_excerpt: ""
 layout: post
-permalink: >
-  https://www.rpicn.org/documentation/installation/installing-images/mac-md/
+permalink: https://www.rpicn.org/documentation/installation/installing-images/mac-md/
 published: true
 ---
-# Installing Operating System Images on Mac OS
+# 在Mac OS系统中使用镜像安装系统
 
-On Mac OS you have the choice of the command line `dd` tool or using the graphical tool ImageWriter to write the image to your SD card.
+在Mac OS系统中用户可选择使用`dd`又或者是图形界面的工具ImagerWriter将系统镜像烧写到SD卡中。
 
-## (Mostly) graphical interface
+## 图形界面（常用）
 
-- Connect the SD card reader with the SD card inside. Note that it must be formatted in FAT32.
-- From the Apple menu, choose About This Mac, then click on More info...; if you are using Mac OS X 10.8.x Mountain Lion or newer then click on System Report.
+- 把SD卡插进读卡器中再插入电脑。请务必先将SD卡格式化为FAT32格式。
+- 点击苹果标志，再点击“关于本机”，再点击“更多信息”；如果Mac OS是10.8.x Mountain Lion或者更新的版本，再点击“系统报告”。
+- 点击USB（如果使用内置的读卡器就点击“读卡器”），再在窗口的右上角找到SD卡。
 - Click on USB (or Card Reader if using a built-in SD card reader) then search for your SD card in the upper right section of the window. Click on it, then search for the BSD name in the lower right section; it will look something like 'diskn' where n is a number (for example, disk4). Make sure you take a note of this number.
 - Unmount the partition so that you will be allowed to overwrite the disk; to do this, open Disk Utility and unmount it (do not eject it, or you will have to reconnect it). Note that On Mac OS X 10.8.x Mountain Lion, "Verify Disk" (before unmounting) will display the BSD name as "/dev/disk1s1" or similar, allowing you to skip the previous two steps.
 - From the terminal run:
