@@ -26,14 +26,21 @@ published: true
 
     sudo apt-get install weavedconnectd
 
-然后运行`weavedinstaller`。
-
-Next run the weavedinstaller.  The weavedinstaller will ask you to input your Weaved account user name (email) and password.  You can create a Weaved user account here: https://developer.weaved.com/portal/index.php.   After you have created an account, go back to the Pi command line window.  Enter the command below to run the weavedinstaller on your Pi.  Follow the on-screen instructions in the Pi terminal window.
+然后运行`weavedinstaller`。`weavedinstaller`会询问用户在Weaved网站上的账号（邮箱地址）和密码。用户可以移步到<a href="https://developer.weaved.com/portal/index.php" target="_blank">这个网页</a>注册。注册好后可以在树莓派的命令行中输入Weaved的账号和密码后继续按屏幕的指引安装。
 
     sudo weavedinstaller
 
-Your Weaved account is now a private Internet VPN connection service to your Pi without port forwarding.  Access your Pi by logging in to your account at www.weaved.com.
+安装完成后，树莓派就已经接入一个虚拟私有网络（VPN）中了，而且无需设置端口映射。需要登入到树莓派的话，只要登入<a href="http://www.weaved.com" target="_blank">www.weaved.com</a>，再按网站上的指引继续。
 
 如需更多帮助，请致电邮至<a href="mailto:support@weaved.com">support@weaved.com</a>。
 
-## 花生壳
+## <a href="http://www.oray.com">Oray.com</a>的花生壳、向日葵及蒲公英等服务或产品
+
+<a href="http://www.oray.com">Oray.com</a>是国内知名互联网服务商，旗下产品众多，而且适合用于远程连接树莓派这个场景的话，软件服务方面有<a href="http://hsk.oray.com/download/#type=http|shumeipai" target="_blank">花生壳</a>、<a href="http://sunlogin.oray.com/zh_CN/" target="_blank">向日葵</a>，硬件产品有<a href="http://pgy.oray.com/" target="_blank">蒲公英</a>。
+
+- <a href="http://hsk.oray.com/download/#type=http|shumeipai" target="_blank">花生壳（动态域名）</a>：有公网IP或网络运营商允许端口转发的用户适用，旧版源码有公开，但新版源码并没公开；
+- <a href="http://sunlogin.oray.com/zh_CN/" target="_blank">向日葵（远程监控）</a>：可以在浏览器中SSH远程连接，没公网IP或支营商不允许端口转发的用户适用；遗憾的是厂商没有公开源码，也没适合树莓派安装的版本；
+- <a href="http://pgy.oray.com/" target="_blank">蒲公英（智能路由）</a>：内嵌了<a href="http://hsk.oray.com/download/#type=http|shumeipai" target="_blank">花生壳内网版</a>和<a href="http://sunlogin.oray.com/zh_CN/hardware/" target="_blank">向日葵远程开机模块</a>的智能无线路由器，仅售¥198！
+
+现在一般市面上的国产路由，也集成了花生壳的网页版，如果运营商不允许常用端口的转发，通常是无法直接远程连接的，建议考虑购买功能超多的智能路由<a href="http://pgy.oray.com/" target="_blank">蒲公英</a>。
+

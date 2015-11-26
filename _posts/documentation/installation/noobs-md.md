@@ -18,11 +18,11 @@ published: true
 
 ### 购买预装NOOBS的SD卡
 
-获取NOOBS最便捷的途径，绝对是购买一张预装了NOOBS的SD卡！详细请浏览[Swag Store](http://swag.raspberrypi.org/collections/frontpage/products/noobs-8gb-sd-card)，只售£4！
+获取NOOBS最便捷的途径，绝对是购买一张预装了NOOBS的SD卡！详细请浏览<a href="http://swag.raspberrypi.org/collections/frontpage/products/noobs-8gb-sd-card" target="_blank">Swag Store</a>，只售£4！
 
 ### 下载
 
-除此之外，[树莓派官方网站的下载页面](https://www.raspberrypi.org/downloads/noobs/)上也有提供NOOBS的下载链接。
+除此之外，<a href="https://www.raspberrypi.org/downloads/noobs/" target="_blank">树莓派官方网站的下载页面</a>上也有提供NOOBS的下载链接。
 
 #### 如何将NOOBS安装到SD卡
 
@@ -41,16 +41,15 @@ published: true
 
 ##### Windows
 
-建议Windows用户使用SD协会的格式化工具，[SD Formatter （Windows版）](https://www.sdcard.org/chs/downloads/formatter_4/eula_windows/index.html)。格式化时，需要在“选项设置”中将
-“逻辑大小调整”设置成“开启（On）”，以确保格式化的是来整个SD卡，而不只是一个分区。
+建议Windows用户使用SD协会的格式化工具，<a href="https://www.sdcard.org/chs/downloads/formatter_4/eula_windows/index.html" target="_blank">SD Formatter （Windows版）</a>。格式化时，需要在“选项设置”中将“逻辑大小调整”设置成“开启（On）”，以确保格式化的是来整个SD卡，而不只是一个分区。
 
 ##### Mac OS
 
-除了系统自带的OSX Disk Utility之外，Mac用户也可以使用[SD Formatter（Mac版）](https://www.sdcard.org/chs/downloads/formatter_4/eula_mac/index.html)将整个SD卡格式化。选择SD卡的盘符然后以`MS-DOS`格式抹掉（Erase）。
+除了系统自带的OSX Disk Utility之外，Mac用户也可以使用<a href="https://www.sdcard.org/chs/downloads/formatter_4/eula_mac/index.html" target="_blank">SD Formatter（Mac版）</a>将整个SD卡格式化。选择SD卡的盘符然后以`MS-DOS`格式抹掉（Erase）。
 
 ##### Linux
 
-建议Linux用户使用`gparted`（或命令行版本的`parted`）进行整个SD卡的格式化。另外，也可参考Norman Dunbar为Linux用户写的一个[树莓派NOOBS指引](http://qdosmsq.dunbar-it.co.uk/blog/2013/06/noobs-for-raspberry-pi/)。
+建议Linux用户使用`gparted`（或命令行版本的`parted`）进行整个SD卡的格式化。另外，也可参考Norman Dunbar为Linux用户写的一个<a href="http://qdosmsq.dunbar-it.co.uk/blog/2013/06/noobs-for-raspberry-pi/" target="_blank">树莓派NOOBS指引</a>。
 
 ## NOOBS里面的东东
 
@@ -83,8 +82,8 @@ NOOBS有两个版本：NOOBS，离线及在线安装；以及NOOBS Lite，仅限
 
 ### NOOBS文档
 
-关于NOOBS高级配置的完整文档，托管在[GitHub](https://github.com/raspberrypi/noobs/blob/master/README.md)上。
+关于NOOBS高级配置的完整文档，托管在<a href="https://github.com/raspberrypi/noobs/blob/master/README.md" target="_blank">GitHub</a>上。
 
 ### NOOBS源代码
 
-同时，NOOBS的源代码也托管在[GitHub](https://github.com/raspberrypi/noobs)上。
+同时，NOOBS的源代码也托管在<a href="https://github.com/raspberrypi/noobs" target="_blank">GitHub</a>上。

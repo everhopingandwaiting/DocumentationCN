@@ -18,7 +18,7 @@ published: true
 
 使用NOOBS安装系统的时候，用户可按下字母键`L`后，用上下箭头选中合适的语言，再按下`Enter`选定；当然也可以使用鼠标选择。NOOBS会记下用户的选择，以后将会显示已选定的语言。
 
-另外，使用NOOBS安装系统的话，也可以参考[这篇文章](https://github.com/raspberrypi/noobs/blob/master/README.md#how-to-change-the-default-language-keyboard-layout-display-mode-or-boot-partition)，在安装系统之前预先设定。
+另外，使用NOOBS安装系统的话，也可以参考<a href="https://github.com/raspberrypi/noobs/blob/master/README.md#how-to-change-the-default-language-keyboard-layout-display-mode-or-boot-partition" target="_blank">这篇文章</a>，在安装系统之前预先设定。
 
 ### Raspbian
 
@@ -31,7 +31,7 @@ published: true
 
 使用NOOBS安装系统的时候，用户可以按下数字键`9`后，用上下箭头选中合适的布局，再按下`Enter`选定；当然也可以使用鼠标选择。NOOBS会记下用户的选择，以后将会使用已选定的键盘布局。
 
-另外，使用NOOBS安装系统的话，也可以参考[这篇文章](https://github.com/raspberrypi/noobs/blob/master/README.md#how-to-change-the-default-language-keyboard-layout-display-mode-or-boot-partition)，在安装系统之前预先设定。
+另外，使用NOOBS安装系统的话，也可以参考<a href="https://github.com/raspberrypi/noobs/blob/master/README.md#how-to-change-the-default-language-keyboard-layout-display-mode-or-boot-partition" target="_blank">这篇文章</a>，在安装系统之前预先设定。
 
 ### Raspbian
 

@@ -34,11 +34,11 @@ published: true
 
 屏幕将显示如下画面：
 
-![raspi-config screen](https://github.com/RaspberryPiChina/documentation/raw/master/configuration/images/raspi-config.png)
+![raspi-config screen](https://github.com/raspberrypi/documentation/raw/master/configuration/images/raspi-config.png)
 
 选择`Advanced Options`，然后按下`Enter`，选择A6，`Audio`，再按下`Enter`。
 
-![Audio configuration screen](https://github.com/RaspberryPiChina/documentation/raw/master/configuration/images/raspi-config-audio.png)
+![Audio configuration screen](https://github.com/raspberrypi/documentation/raw/master/configuration/images/raspi-config-audio.png)
 
 然后，除了`Auto`之外，程序将会提供上述的另外两种模式供用户选择。选定后按下`Enter`，再按右箭头退出当前列表，最后选择`Finish`，退出raspi-config。
 

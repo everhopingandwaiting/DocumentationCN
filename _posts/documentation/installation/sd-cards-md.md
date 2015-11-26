@@ -15,9 +15,9 @@ published: true
 - SD卡容量。若使用NOOBS安装系统，建议使用8G以上的SD卡；若使用其他镜像安装系统，建议使用4G以上的SD卡;某些发行版可安装在更小的SD卡中，比如OpenElec和Arch。
 - SD卡类型。SD卡协会定义了SD卡的几种速度规格，可令用户直观地区分不同类型SD卡的数据读写速率。比如Class 4（C4）的写入速率应达到4MB/s，而C10应达10MB/s。但这并非表示日常使用中C10与C4的卡相比更胜一筹，因为写入速度的提升往往需要牺牲读取速度及增加寻道时间。
 
-官方建议购买8G、C6的[Raspberry Pi TF card](http://swag.raspberrypi.org/products/noobs-8gb-sd-card)，此卡秒杀市面上其余的SD卡，更附送一张SD卡套，十分超值。
+官方建议购买8G、C6的<a href="http://swag.raspberrypi.org/products/noobs-8gb-sd-card" target="_blank">Raspberry Pi TF card</a>，此卡秒杀市面上其余的SD卡，更附送一张SD卡套，十分超值。
 
-译者注：SD卡（TF卡）的兼容情况，可参考[elinux.org](http://elinux.org)的这个Wiki：[RPi SD cards](http://elinux.org/RPi_SD_cards)。
+译者注：SD卡（TF卡）的兼容情况，可参考<a href="http://elinux.org" target="_blank">elinux.org</a>的这个Wiki：<a href="http://elinux.org/RPi_SD_cards" target="_blank">RPi SD cards</a>。
 
 若遇到SD卡数据损坏的问题，请确保遵循以下事项：
 
