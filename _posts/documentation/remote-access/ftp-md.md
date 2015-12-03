@@ -13,64 +13,52 @@ published: true
 
 用户可以使用FTP（文件传输协议）让树莓派和其他电脑互相传输文件。虽然Raspbian自带的程序`sftp-server`可以让有着特定权限的用户传输文件和目录，但是很多时候还是需要限制他们的文件读取权限的。本文将介绍如何使用Pure-FTP搭建一个FTP服务器：
 
-## Install Pure-FTPd
+## 安装Pure-FTPd
 
-Firstly install `Pure-FTPd` using the following command line in Terminal:
+首先安装`Pure-FTPd`，在终端输入下面的命令：
 
-```bash
-sudo apt-get install pure-ftpd
-```
 
-## Basic Configurations
+    sudo apt-get install pure-ftpd
 
-We need to creat a new user group named `ftpgroup` and a new user named `ftpuser` for FTP users, and make sure this "user" has NO log in privilge and NO home directory:
 
-```bash
-groupadd ftpgroup;
-useradd ftpuser -g ftpgroup -s /sbin/nologin –d /dev/null
-```
+## 基本设置
 
-### FTP Home Directory, Virtual User, and User Group
+先新建一个名为`ftpgroup`的用户组，再新建一个名为`ftpuser`的用户，但是这个“用户”不可以登入系统，也不可以有自己的主目录。在终端输入以下命令：
 
-For instance, make a new directory named `FTP` for the first user:
+    groupadd ftpgroup;
+	useradd ftpuser -g ftpgroup -s /sbin/nologin –d /dev/null
 
-```bash
-sudo mkdir /home/pi/FTP
-```
 
-Make sure the directory is accessable for `ftpuser`:
+### FTP目录，虚拟用户及虚拟用户组
 
-```bash
-sudo chown -R ftpuser:ftpgroup /home/pi/FTP
-```
+假设需要新建一个名为`FTP`的目录。
 
-Create a virtual user named `upload`, mapping the virtual user to `ftpuser` and `ftpgroup`, setting home directory `/home/pi/FTP`, and record password of the user in database:
+    sudo mkdir /home/pi/FTP
 
-```bash
-sudo pure-pw useradd upload -u ftpuser -g ftpgroup -d /home/pi/FTP -m
-```
+然后将所有者改为`ftpuser`，再改权限为755：
 
-A password of that virtual user will be required after this command line is entered. And next, set up a virtual user database by typing:
+    sudo chown -R ftpuser:ftpgroup /home/pi/FTP；
+	sudo chmod -R 755 /home/pi/FTP;
 
-```bash
-sudo pure-pw mkdb
-```
+再新建一个名为`upload`的虚拟用户，映射到`ftpuser`和`ftpgroup`去，将其主目录设定为`/home/pi/FTP`，再把密码存在Pure-FTPd的数据库中：
 
-Last but not least, define an authentication method by making a link of file `/etc/pure-ftpd/conf/PureDB`, the number `60` is only for demonstration, make it as small as necessary:
+    sudo pure-pw useradd upload -u ftpuser -g ftpgroup -d /home/pi/FTP -m
 
-```bash
-ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/60puredb
-```
+输入了这个命令之后，程序会提示设定该用户的密码，需要盲输。其后建立虚拟用户数据库，在终端输入：
 
-Restart the program:
+    sudo pure-pw mkdb
 
-```bash
-sudo service pure-ftpd restart
-```
+最后，也是最重要的，是指定校验密码方法的优先值，只需要为`/etc/pure-ftpd/conf/PureDB`在`/etc/pure-ftpd/auth`目录中建立一个软链，在软链的文件名前加一个足够小的数字就可以了，例如`60`。在终端输入：
 
-Test it with an FTP client, like FileZilla.
+    ln -s /etc/pure-ftpd/conf/PureDB /etc/pure-ftpd/auth/60puredb
 
-## More Detailed Configurations:
+重新启动Pure-FTPd：
+
+    sudo service pure-ftpd restart
+
+这时可以使用FTP客户端，例如FileZilla，来测试服务器了。
+
+## 更多的设置
 
 The configuration of Pure-FTPd is simple and intuitive. The administrator only needs to define the necessary settings by making files with option names, like `ChrootEveryone`, and typing `yes`, then storing in the directory `/etc/pure-ftpd/conf`, if all FTP users are to be locked in their FTP home directory (`/home/pi/FTP`). Here are some recommended settings:
 
@@ -102,8 +90,8 @@ make a file named `FSCharset` and type`UTF-8`;
 
 Restart `pure-ftpd` again and apply the above settings.
 
-```bash
-sudo service pure-ftpd restart
-```
+
+    sudo service pure-ftpd restart
+
 
 想查询Pure-FTPd的其他信息和官方文档，请浏览<a href="http://www.pureftpd.org/project/pure-ftpd" target="_blank">Pure-FTPd的官方网站</a>。

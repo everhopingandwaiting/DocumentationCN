@@ -19,8 +19,7 @@ published: true
 
 真可惜，目前故障处理页面亟待完善。 如果未能查找到有用的资料，请尝试在我们的
 
-[论坛][3]搜索你的问题，如果仍未能解决，请在论坛中寻求帮助。
+<a href="https://www.raspberrypi.org/forums/" target="_blank">论坛</a>搜索你的问题，如果仍未能解决，请在论坛中寻求帮助。
 
  [1]: hardware/networking/ip-address.md
  [2]: hardware/camera.md
- [3]: https://www.raspberrypi.org/forums/
