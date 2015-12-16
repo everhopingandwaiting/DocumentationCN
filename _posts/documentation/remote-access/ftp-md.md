@@ -8,6 +8,7 @@ layout: post
 permalink: >
   https://www.rpicn.org/documentation/remote-access/ftp-md/
 published: true
+_theme_show_post_title: 0
 ---
 # FTP服务器
 
@@ -60,35 +61,35 @@ published: true
 
 ## 更多的设置
 
-The configuration of Pure-FTPd is simple and intuitive. The administrator only needs to define the necessary settings by making files with option names, like `ChrootEveryone`, and typing `yes`, then storing in the directory `/etc/pure-ftpd/conf`, if all FTP users are to be locked in their FTP home directory (`/home/pi/FTP`). Here are some recommended settings:
+Pure-FTPd的设置简单直观。管理员只需要在`/etc/pure-ftpd/conf`目录中建立一个文件，以选项名为文件名，再将设定内容写入文件中即可。例如，如果需要将用户锁定在其各自的根目录，只要在这个目录中新建一个名为`ChrootEveryone`的文件，再写入`yes`，就可以了。下面是一些基本的设置建议：
 
-```bash
-sudo nano /etc/pure-ftpd/conf/ChrootEveryone
-```
+先在终端输入：
 
-Type `yes`, and press ``Ctrl+X``, ``Y``, and ``Enter``.
+    sudo nano /etc/pure-ftpd/conf/ChrootEveryone
 
-Likewise,
+再写入`yes`，按下`Ctrl`和`X`后，按`Y`，再按`Enter`，保存修改后退出。
 
-make a file named `NoAnonymous` and type `yes`;
+同样地，继续：
 
-make a file named `AnonymousCantUpload` and type `yes`;
+新建一个名为`NoAnonymous`的文件，写入`yes`；
 
-make a file named `AnonymousCanCreateDirs` and type `no`;
+新建一个名为`AnonymousCantUpload`的文件，写入`yes`；
 
-make a file named `DisplayDotFiles` and type`no`;
+新建一个名为`AnonymousCanCreateDirs`的文件，写入`no`；
 
-make a file named `DontResolve` and type `yes`;
+新建一个名为`DisplayDotFiles`的文件，写入`no`；
 
-make a file named `ProhibitDotFilesRead` and type `yes`;
+新建一个名为`DontResolve`的文件，写入`yes`；
 
-make a file named `ProhibitDotFilesWrite` and type `yes`;
+新建一个名为`ProhibitDotFilesRead`的文件，写入`yes`；
 
-make a file named `FSCharset` and type`UTF-8`;
+新建一个名为`ProhibitDotFilesWrite` 的文件，写入`yes`；
 
-...
+新建一个名为`FSCharset`的文件，写入`UTF-8`；
 
-Restart `pure-ftpd` again and apply the above settings.
+……
+
+再次重启`pure-ftpd`，使上面的设置生效。
 
 
     sudo service pure-ftpd restart
