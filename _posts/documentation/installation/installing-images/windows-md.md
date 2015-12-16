@@ -1,12 +1,13 @@
 ---
 ID: 423
-post_title: Windows
+post_title: 在Windows系统中烧写系统镜像
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 22:26:30
 post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/installation/installing-images/windows-md/
 published: true
+_theme_show_post_title: 0
 ---
 # 在Windows系统中烧写系统镜像
 
