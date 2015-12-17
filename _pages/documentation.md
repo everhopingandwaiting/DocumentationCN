@@ -7,8 +7,9 @@ post_excerpt: ""
 layout: page
 permalink: https://www.rpicn.org/documentation/
 published: true
+_theme_show_post_title: 0
 ---
-# 树莓派（Raspberry Pi）官方文档
+# 树莓派（Raspberry Pi）官方文档中文版
 
 本文档为树莓派官方文档，由[树莓派基金会（Raspberry Pi Foundation）][1]以及基社区贡献者撰写。本帮助文档中方版本由[聪头话斋][2]发起。 
 
@@ -41,7 +42,9 @@ published: true
 
 ## 许可
 
-除非另有声明，本文档采用知识共享“署名-相同方式创作 4.0 国际”许可协议授权。[![Creative Commons Attribution-ShareAlike 4.0 International][14]][15] 
+除非另有声明，本文档采用知识共享“署名-相同方式创作 4.0 国际”许可协议授权。
+
+[![Creative Commons Attribution-ShareAlike 4.0 International][14][15] 
 
 ***树莓派官方文档中文版*** 由[rpicn.org][16]维护， 根据 [知识共享“署名-相同方式创作 4.0 国际”][15]许可协议授权。 
 

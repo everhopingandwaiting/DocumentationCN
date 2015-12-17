@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/setup/readme-md-11/
 published: true
+_theme_show_post_title: 0
 ---
 # 树莓派安装
 

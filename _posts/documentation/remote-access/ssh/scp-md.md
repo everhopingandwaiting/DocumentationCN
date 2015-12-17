@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/ssh/scp-md/
 published: true
+_theme_show_post_title: 0
 ---
 # SCP（Secure Copy）文件传输
 

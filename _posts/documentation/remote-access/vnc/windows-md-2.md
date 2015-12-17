@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/vnc/windows-md-2/
 published: true
+_theme_show_post_title: 0
 ---
 # 在Windows系统中通过VNC连接树莓派 
 

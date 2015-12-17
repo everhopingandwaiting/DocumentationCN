@@ -7,8 +7,8 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/web-server/nginx-md/
 published: true
+_theme_show_post_title: 0
 ---
-
 # 用nginx在树莓派上搭建网页服务器
 
 NGINX（读音为“engin-x”，前半部分与“发动机，引擎”发音一样）是一个受欢迎的轻量级网页服务器程序，在树莓派上亦可安装。

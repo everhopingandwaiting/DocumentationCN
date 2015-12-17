@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/vnc/readme-md-3/
 published: true
+_theme_show_post_title: 0
 ---
 # VNC (虚拟网络计算) 
 

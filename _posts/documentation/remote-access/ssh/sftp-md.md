@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/remote-access/ssh/sftp-md/
 published: true
+_theme_show_post_title: 0
 ---
 # SFTP（SSH File Transfer Protocol）文件传输
 
