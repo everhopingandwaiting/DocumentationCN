@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/configuration/wireless/wireless-cli-md/
 published: true
+_theme_show_post_title: 0
 ---
 # 使用命令行设置Wi-Fi
 
