@@ -1,3 +1,14 @@
+---
+ID: 720
+post_title: IP地址
+author: admin
+post_date: 2015-12-17 12:42:12
+post_excerpt: ""
+layout: post
+permalink: https://www.rpicn.org/documentation/troubleshooting/hardware-troubleshooting/networking/ip-address-md/
+published: true
+---
+
 # IP地址
 
 树莓派默认开启了DHCP客户端，如果树莓派通过网线连接到开启了DHCP服务的路由，将会自动获取到IP地址。
