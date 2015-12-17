@@ -1,14 +1,14 @@
 ---
 ID: 405
-post_title: 系统安装镜像
+post_title: 使用镜像安装
 author: 有聰哥冇甩拖
 post_date: 2015-10-26 17:50:26
 post_excerpt: ""
 layout: post
-permalink: https://www.rpicn.org/documentation/installation/installing-images/readme-md/
+permalink: https://www.rpicn.org/documentation/installation/installing-images/readme-md-5/
 published: true
 ---
-# 系统安装镜像
+# 使用镜像安装
 
 将树莓派系统镜像烧写到SD（TF）卡中，另外需要一台电脑和读卡器。
 

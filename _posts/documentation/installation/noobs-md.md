@@ -74,7 +74,7 @@ NOOBS有两个版本：NOOBS，离线及在线安装；以及NOOBS Lite，仅限
 
 ## NOOBS开发
 
-### Latest NOOBS release
+### NOOBS最新版本
 
 目前NOOBS最新版本为**v1.4.2**，发行于**2015年9月24日**；而NOOBS Lite为**v1.4**，发行于**2015年2月18日**。
 
