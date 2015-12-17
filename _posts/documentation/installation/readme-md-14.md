@@ -17,5 +17,5 @@ published: true
 ## 目录
 
 - [NOOBS](../noobs.md)
-- [使用镜像安装](../installing-images/README.md)
+- [使用镜像安装](../installing-images/README.md.5)
 - [SD卡](../sd-cards.md)
