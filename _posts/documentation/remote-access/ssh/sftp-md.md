@@ -32,5 +32,5 @@ SFTP是通过SSH进行文件读取、传输、管理的网络协议。用户可�
 	User name: pi (default)
 	Password: raspberry (default)
 
-其他参考：[IP地址](../../../troubleshooting/hardware/networking/ip-address.md)。
+其他参考：[IP地址](../../../troubleshooting/hardware-troubleshooting/networking/ip-address.md)。
 

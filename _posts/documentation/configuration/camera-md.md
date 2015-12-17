@@ -40,4 +40,4 @@ published: true
 
 ## 故障处理
 
-参考[摄像头故障处理](../../troubleshooting/hardware/camera.md)。
+参考[摄像头故障处理](../../troubleshooting/hardware-troubleshooting/camera.md)。

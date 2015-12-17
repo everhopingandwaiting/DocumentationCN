@@ -14,7 +14,7 @@ published: true
 
 连接前，用户需要知道树莓派的IP地址，可以在树莓派上的终端输入`hostname -I`。
 
-另外，对于树莓派没连接显示器的用户，可以通过路由器的Web管理页面上查看，或者使用其他工具例如`nmap`，详细信息请参考[IP地址](../../../troubleshooting/hardware/networking/ip-address.md)文档。
+另外，对于树莓派没连接显示器的用户，可以通过路由器的Web管理页面上查看，或者使用其他工具例如`nmap`，详细信息请参考[IP地址](../../../troubleshooting/hardware-troubleshooting/networking/ip-address.md)文档。
 
 要从另一台电脑连接到树莓派，输入下面的命令，请将`<IP>`替换成树莓派的IP地址：
 

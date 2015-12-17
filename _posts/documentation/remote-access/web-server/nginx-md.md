@@ -27,7 +27,7 @@ NGINX（读音为“engin-x”，前半部分与“发动机，引擎”发音�
 
 ## 测试NGINX
 
-默认情况下，NGINX会在网页目录下放置一个测试用的HTML文件。如果在本机访问，可以前往`http://localhost/`浏览；如果在局域网内的其他电脑中访问，可以前往`http://192.168.1.10`（地址以树莓派的实际局域网IP为准）。如果不清楚树莓派的IP，可以在树莓派本机的终端输入`hostname -I`查询，如需更多信息，请参考[IP地址](../../../troubleshooting/hardware/networking/ip-address.md)。
+默认情况下，NGINX会在网页目录下放置一个测试用的HTML文件。如果在本机访问，可以前往`http://localhost/`浏览；如果在局域网内的其他电脑中访问，可以前往`http://192.168.1.10`（地址以树莓派的实际局域网IP为准）。如果不清楚树莓派的IP，可以在树莓派本机的终端输入`hostname -I`查询，如需更多信息，请参考[IP地址](../../../troubleshooting/hardware-troubleshooting/networking/ip-address.md)。
 
 无论在树莓派本机或在局域网内的电脑上浏览，都应该可以看到如下画面：
 

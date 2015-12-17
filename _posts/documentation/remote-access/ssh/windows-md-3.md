@@ -20,7 +20,7 @@ published: true
 
 在`Host Name`一栏中输入树莓派的IP，然后点击`Open`，如果点击了之后没有任何反应而且最后显示一句错误信息`Network error: Connection timed out`则可能输入的IP有误。
 
-如果不知道树莓派的IP地址，可以在树莓派本机上输入命令`hostname -I`来查询。如需更多关于树莓派IP地址的信息，请浏览[IP地址](../../../troubleshooting/hardware/networking/ip-address.md)。
+如果不知道树莓派的IP地址，可以在树莓派本机上输入命令`hostname -I`来查询。如需更多关于树莓派IP地址的信息，请浏览[IP地址](../../../troubleshooting/hardware-troubleshooting/networking/ip-address.md)。
 
 如果连接成功，程序会弹出下图所示的安全警告，在内网中通常可以信任，点击`Yes`按钮。每当连接一个以前没连接过的主机，PuTTY都会有这样的安全提示。
 

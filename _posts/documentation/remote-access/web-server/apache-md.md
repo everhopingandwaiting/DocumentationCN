@@ -22,7 +22,7 @@ Apache是一个受欢迎的网站服务器程序，还可以安装在树莓派�
 
 ## 测试网页服务器
 
-安装完成后，Apache会自动在默认的网页存放目录中保存一个示例网页（一个HTML文件）。当本地用户浏览`http://localhost/`或其他用户通过内网中的电脑浏览`http://192.168.1.10`（具体按树莓派的内网IP地址为准），就会显示这个网页。如果不知道树莓派的IP地址，可以在终端中输入命令`hostname -I`查询（如需更多帮助，请浏览[IP address](../../../troubleshooting/hardware/networking/ip-address.md)）。
+安装完成后，Apache会自动在默认的网页存放目录中保存一个示例网页（一个HTML文件）。当本地用户浏览`http://localhost/`或其他用户通过内网中的电脑浏览`http://192.168.1.10`（具体按树莓派的内网IP地址为准），就会显示这个网页。如果不知道树莓派的IP地址，可以在终端中输入命令`hostname -I`查询（如需更多帮助，请浏览[IP address](../../../troubleshooting/hardware-troubleshooting/networking/ip-address.md)）。
 
 无论是本机查看抑或是局域网内查看，如果看到下面的画面，说明Apache工作正常！
 
@@ -44,7 +44,7 @@ Apache是一个受欢迎的网站服务器程序，还可以安装在树莓派�
     total 12
     drwxr-xr-x  2 root root 4096 Jan  8 01:29 .
     drwxr-xr-x 12 root root 4096 Jan  8 01:28 ..
-    -rw-r--r--  1 root root  177 Jan  8 01:29 index.html`
+    -rw-r--r--  1 root root  177 Jan  8 01:29 index.html
 
 这说明`/var/www/html/`目录下有一个名为`index.html`的文件。`.`指的是`/var/www/html/`目录自己本身，而`..`指的是父级目录，即`/var/www/`。
 
