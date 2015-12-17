@@ -21,5 +21,5 @@ published: true
 
 <a href="https://www.raspberrypi.org/forums/" target="_blank">论坛</a>搜索你的问题，如果仍未能解决，请在论坛中寻求帮助。
 
- [1]: hardware/networking/ip-address.md
+ [1]: ../hardware-troubleshooting/networking/ip-address.md
  [2]: hardware/camera.md
