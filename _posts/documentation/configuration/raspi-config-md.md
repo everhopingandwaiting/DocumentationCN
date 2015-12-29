@@ -7,6 +7,7 @@ post_excerpt: ""
 layout: post
 permalink: https://www.rpicn.org/documentation/configuration/raspi-config-md/
 published: true
+_theme_show_post_title: 0
 ---
 # raspi-config
 
@@ -22,25 +23,25 @@ published: true
 
 随后终端将显示一个蓝色的屏幕，还有一个列满各种选项的灰色框框，如下图所示：
 
-![raspi-config main screen](https://github.com/raspberrypi/documentation/blob/master/configuration/images/raspi-config.png)
+![raspi-config main screen](https://raw.githubusercontent.com/raspberrypi/documentation/master/configuration/images/raspi-config.png)
 
 工具提供的选项包括：
 
-`                        Raspberry Pi Software Configuration Tool (raspi-config)`
-` `
-`Setup Options`
-` `
-`    1 Expand Filesystem              Ensures that all of the SD card storage is available to the OS`
-`    2 Change User Password           Change password for the default user (pi)`
-`    3 Enable Boot to Desktop/Scratch Choose whether to boot into a desktop environment, Scratch, or the command line`
-`    4 Internationalisation Options   Set up language and regional settings to match your location`
-`    5 Enable Camera                  Enable this Pi to work with the Raspberry Pi Camera`
-`    6 Add to Rastrack                Add this Pi to the online Raspberry Pi Map (Rastrack)`
-`    7 Overclock                      Configure overclocking for your Pi`
-`    8 Advanced Options               Configure advanced settings`
-`    9 About raspi-config           Information about this configuration tool`
-` `
-`                                   <Select>                                  <Finish>`
+                      Raspberry Pi Software Configuration Tool (raspi-config)
+    
+    Setup Options
+    
+    1 Expand Filesystem              Ensures that all of the SD card storage is available to the OS
+    2 Change User Password           Change password for the default user (pi)
+    3 Enable Boot to Desktop/Scratch Choose whether to boot into a desktop environment, Scratch, or the command line
+    4 Internationalisation Options   Set up language and regional settings to match your location
+    5 Enable Camera                  Enable this Pi to work with the Raspberry Pi Camera
+    6 Add to Rastrack                Add this Pi to the online Raspberry Pi Map (Rastrack)
+    7 Overclock                      Configure overclocking for your Pi
+    8 Advanced Options               Configure advanced settings
+    9 About raspi-config           Information about this configuration tool
+    
+    <Select>                                  <Finish>
 
 ### 在菜单中移动光标
 
